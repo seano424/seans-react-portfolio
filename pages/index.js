@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section style={{ width: "45%" }} className="mt-5">
+      <section className="mt-5 lg:w-3/7 w-5/7">
         <p className="pl-1">Hi, My name is </p>
         <h1 className="text-6xl font-bold py-3">Sean OReilly</h1>
         <article className="flex pb-6 pl-1">

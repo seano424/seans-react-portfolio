@@ -12,7 +12,7 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="flex flex-1 flex-col items-center dark:bg-gray-900">
+      <main className="flex flex-1 flex-col items-center dark:bg-gray-900 w-screen">
         {children}
       </main>
       <Footer />

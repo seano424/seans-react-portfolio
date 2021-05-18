@@ -17,7 +17,7 @@ export default function Navbar() {
   );
   return (
     <>
-      <nav className="sticky z-20 dark:bg-gray-900 top-0 backdrop-filter backdrop-blur flex w-screen px-12 justify-between items-center py-6 lg:px-48 my-0">
+      <nav className="sticky z-20 dark:bg-gray-900 top-0 bg-white xl:backdrop-filter backdrop-blur flex w-screen px-8 justify-between items-center py-6 lg:px-48 my-0">
         <div className="lg:hidden pl-2">{button}</div>
         <Link className="py-1 mt-1 pl-0 text-sm" href="/">
           <a className="hidden lg:flex">Home</a>
@@ -61,7 +61,7 @@ export default function Navbar() {
         </article>
       </nav>
       <section
-        className={`absolute z-10 top-20 bottom-0 w-full bg-white dark:bg-gray-900  ${
+        className={`fixed z-10 top-20 bottom-0 w-full bg-white dark:bg-gray-900  ${
           open ? "opacity-100 h-full" : "opacity-0 h-0"
         }`}
       >

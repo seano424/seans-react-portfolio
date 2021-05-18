@@ -26,7 +26,7 @@ export default function Project({ title, description, repo, site, image }) {
           priority={true}
         />
       </div>
-      <div className=" p-5 rounded h-40">
+      <div className=" xl:p-5 rounded xl:h-40">
         <p>{description}</p>
       </div>
       <div className="flex items-center dark:text-gray-300 py-4">

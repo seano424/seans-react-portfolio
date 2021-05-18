@@ -12,7 +12,7 @@ export default function About(props) {
   // );
   return (
     <Layout>
-      <section className="mt-20" style={{ width: "45%" }}>
+      <section className="mt-20 w-6/7 xl:w-3/7">
         <article className="flex flex-col items-center justify-center mb-16">
           <Image
             className="rounded-full"

@@ -61,7 +61,7 @@ export default function Navbar() {
         </article>
       </nav>
       <section
-        className={`absolute top-16 bottom-0 w-full bg-white dark:bg-gray-900 transition-all duration-200 ease-linear ${
+        className={`absolute z-50 top-16 bottom-0 w-full bg-white dark:bg-gray-900 transition-all duration-200 ease-linear ${
           open ? "opacity-100 h-full" : "opacity-0 h-0"
         }`}
       >

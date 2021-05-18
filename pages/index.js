@@ -41,8 +41,15 @@ export default function Home() {
           </p>
 
           <p>
-            I am currently building the artist portfolio for Karrie Marie
-            Baxley, a simple web app utilizing Sanity's CMS.
+            I am currently building the{" "}
+            <a
+              className="hover:underline hover:text-red-500 dark:hover:text-green-300"
+              href="https://www.karriemariebaxley.com"
+              target="_blank"
+            >
+              artist portfolio for Karrie Marie Baxley
+            </a>
+            , a simple web app utilizing Sanity's CMS, Next, and TailwindCSS.
           </p>
         </article>
         <button className="rounded bg-gradient-to-tr dark:from-yellow-200 dark:to-pink-600 p-1">

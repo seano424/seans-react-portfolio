@@ -1,65 +1,62 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Layout from "../components/Layout";
+import { FiGithub, FiLinkedin, FiExternalLink } from "react-icons/fi";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
-        <title>Create Next App</title>
+        <title>Sean Patrick OReilly - Developer, designer, maker</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
+      <section style={{ width: "45%" }} className="mt-5">
+        <p className="pl-1">Hi, My name is </p>
+        <h1 className="text-6xl font-bold py-3">Sean OReilly</h1>
+        <article className="flex pb-6 pl-1">
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+            className="flex items-center pr-10"
+            href="https://github.com/seano424"
+            target="_blank"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <FiGithub /> <p className="px-2">Github</p>
+            <FiExternalLink />
           </a>
-
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+            className="flex items-center"
+            href="https://www.linkedin.com/in/sea-oreilly/"
+            target="_blank"
           >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+            <FiLinkedin /> <p className="px-2">LinkedIn</p>
+            <FiExternalLink />
           </a>
-        </div>
-      </main>
+        </article>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+        <article className="py-5 px-1">
+          <p className="pb-7">
+            I am a Frontend web developer specializing in building creative and
+            problem-solving modules and applications. Currently, I am focused on
+            improving the general web experience with web accessibility and web
+            standards.
+          </p>
+
+          <p>
+            I am currently building the artist portfolio for Karrie Marie
+            Baxley, a simple web app utilizing Sanity's CMS.
+          </p>
+        </article>
+        <button className="rounded bg-gradient-to-tr dark:from-yellow-200 dark:to-pink-600 p-1">
+          <a
+            href="mailto:soreilly424@gmail.com"
+            className="flex items-center border-2 border-purple-400
+            dark:border-transparent dark:bg-dark-soft py-4 px-6 rounded
+            dark:text-gray-100 font-medium dark:bg-black"
+          >
+            {" "}
+            Get in touch
+          </a>
+        </button>
+      </section>
+    </Layout>
+  );
 }

@@ -22,6 +22,7 @@ export default function About(props) {
             width={100}
             objectFit="cover"
             objectPosition="center"
+            priority
           />
           <h1 className="font-bold text-base tracking-wider mt-6 mb-3 uppercase">
             Sean OReilly

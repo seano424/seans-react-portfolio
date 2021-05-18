@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="sticky z-10 top-0 backdrop-filter backdrop-blur flex w-full px-20 justify-between items-center py-6 lg:px-48 my-0">
-        {button}
+        <div className="lg:hidden">{button}</div>
         <Link className="py-1 mt-1 pl-0 text-sm" href="/">
           <a className="hidden lg:flex">Home</a>
         </Link>
@@ -37,7 +37,7 @@ export default function Navbar() {
         </div>
         <article
           onClick={() => setOpen(!open)}
-          className="xl:hidden cursor-pointer flex flex-col justify-center p-3"
+          className="lg:hidden cursor-pointer flex flex-col justify-center p-3"
         >
           <div
             className={`w-8 h-1 bg-gray-900 dark:bg-gray-50 rounded-lg transition-all duration-150 ease-linear relative ${

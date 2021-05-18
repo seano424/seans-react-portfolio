@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import styles from "../styles/Home.module.css";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 import Head from "next/head";
 
 export default function Layout({ children }) {

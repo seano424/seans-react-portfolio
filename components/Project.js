@@ -16,14 +16,16 @@ export default function Project({ title, description, repo, site, image }) {
             {title}
           </a>
         </h1>
-        <Image
+        <img
+          style={{
+            width: "500px",
+            height: "200px",
+            objectFit: "cover",
+            objectPosition: "top",
+          }}
           src={image}
           alt={title}
-          width={500}
-          height={200}
-          objectFit="cover"
-          objectPosition="top"
-          priority={true}
+          // priority={true}
         />
       </div>
       <div className=" xl:p-5 rounded xl:h-40">

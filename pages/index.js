@@ -7,7 +7,7 @@ export default function Home() {
     <Layout>
       <Head>
         <title>Sean Patrick OReilly - Developer, designer, maker</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
 
       <section className="mt-5 lg:w-3/7 w-5/7">

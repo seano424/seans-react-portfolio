@@ -12,7 +12,6 @@ export default function Meta() {
         name="description"
         content={`Sean Patrick OReilly Developer, Creator, Designer`}
       />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
   );
 }

@@ -3,6 +3,7 @@ import Head from "next/head";
 export default function Meta() {
   return (
     <Head>
+      <title>Sean Patrick OReilly - Developer, designer, maker</title>
       <link rel="shortcut icon" href="/images/favicon.ico" />
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />

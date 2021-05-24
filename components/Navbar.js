@@ -9,6 +9,7 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const button = (
     <button
+      aria-label="Button for toggling dark mode"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className="bg-gray-200 dark:bg-gray-800 ml-4 rounded p-3 h-10 w-10 focus:outline-none"
     >

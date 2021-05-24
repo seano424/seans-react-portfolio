@@ -52,10 +52,13 @@ export default function Home() {
             , a simple web app utilizing Sanity's CMS, Next, and TailwindCSS.
           </p>
         </article>
-        <button className="rounded bg-gradient-to-tr dark:from-yellow-200 dark:to-pink-600 p-1">
+        <button
+          aria-label="Button for emailing Sean OReilly"
+          className="rounded bg-gradient-to-tr dark:from-yellow-200 dark:to-pink-600 p-1"
+        >
           <a
             href="mailto:soreilly424@gmail.com"
-            className="flex items-center border-2 border-purple-400
+            className="flex transition-all duration-100 ease-linear items-center border-2 border-purple-400 hover:bg-purple-400 hover:text-white
             dark:border-transparent dark:bg-dark-soft py-4 px-6 rounded
             dark:text-gray-100 font-medium dark:bg-black"
           >

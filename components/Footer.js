@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <p className="text-sm">Designed and Built by</p>
       <a
-        className="text-sm px-1 underline text-purple-500 font-bold"
+        className="text-sm px-1 underline text-red-500 font-bold"
         href="https://github.com/seano424"
         target="_blank"
       >

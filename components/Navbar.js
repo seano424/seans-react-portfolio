@@ -13,16 +13,31 @@ export default function Navbar() {
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className="ml-4 rounded text-xl focus:outline-none"
     >
-      {theme === "dark" ? <BiSun /> : <BiMoon />}
+      {theme === "dark" ? (
+        <BiSun className="hover:text-yellow-600 transition-all duration-500 ease-linear" />
+      ) : (
+        <BiMoon className="hover:text-purple-600 transition-all duration-500 ease-linear" />
+      )}
     </button>
   );
   return (
     <>
       <nav className="sticky z-20 dark:bg-gray-900 top-0 bg-white xl:backdrop-filter backdrop-blur flex w-screen px-8 justify-between items-center py-6 lg:px-48 my-0">
-        <div className="lg:hidden pl-2">{button}</div>
-        <Link className="py-1 mt-1 pl-0 text-sm" href="/">
-          <a className="hidden lg:flex">Home</a>
-        </Link>
+        <aside className="lg:hidden pl-2">{button}</aside>
+        <aside className="flex items-center">
+          <img
+            src="/images/kanizsa-triangle.png"
+            height="30px"
+            width="30px"
+            alt="Kanizsa Triangle Logo"
+            className="mr-4 hidden lg:block"
+          />
+          <Link className="py-1 mt-1 pl-0 text-sm" href="/">
+            <a className="hidden lg:flex font-bold text-2xl hover:text-primary animate-pulse-slow">
+              Sean Patrick
+            </a>
+          </Link>
+        </aside>
         <div className="hidden lg:flex">
           <Link href="/projects">
             <a className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300">

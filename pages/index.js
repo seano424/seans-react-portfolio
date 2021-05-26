@@ -32,7 +32,7 @@ export default function Home() {
               focused on improving the general web experience with web
               accessibility and web standards. I am currently building the{" "}
               <a
-                className="hover:underline underline hover:text-red-500 dark:hover:text-green-300"
+                className="hover:underline underline hover:text-primary dark:hover:text-green-300"
                 href="https://www.karriemariebaxley.com"
                 target="_blank"
               >
@@ -43,21 +43,21 @@ export default function Home() {
           </section>
           <section className="flex gap-4 text-2xl justify-center py-5">
             <a
-              className="flex items-center"
+              className="flex items-center hover:text-primary transition-all duration-200 ease-linear"
               href="https://twitter.com/sea_oreilly"
               target="_blank"
             >
               <FiTwitter />
             </a>
             <a
-              className="flex items-center"
+              className="flex items-center hover:text-primary transition-all duration-300 ease-linear"
               href="https://github.com/seano424"
               target="_blank"
             >
               <FiGithub />
             </a>
             <a
-              className="flex items-center"
+              className="flex items-center hover:text-primary transition-all duration-500 ease-linear"
               href="https://www.linkedin.com/in/sea-oreilly/"
               target="_blank"
             >

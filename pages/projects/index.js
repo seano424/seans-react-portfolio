@@ -3,8 +3,8 @@ import Project from "../../components/Project";
 import { v4 as uuidv4 } from "uuid";
 import projects from "../../lib/projectData";
 
-export default function Projects() {
-  const projectDisplay = projects.map((p) => <Project {...p} key={uuidv4()} />);
+export default function Projects({ data }) {
+  const projectDisplay = data.map((p) => <Project {...p} key={uuidv4()} />);
 
   return (
     <Layout>
@@ -16,4 +16,12 @@ export default function Projects() {
       </section>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const data = projects;
+
+  return {
+    props: { data },
+  };
 }

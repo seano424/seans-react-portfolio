@@ -14,6 +14,9 @@ module.exports = {
       colors: {
         primary: "#FF017E",
       },
+      animation: {
+        "pulse-slow": "pulse 10s linear infinite",
+      },
     },
   },
   variants: {

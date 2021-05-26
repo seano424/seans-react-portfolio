@@ -8,7 +8,10 @@ export default function Projects() {
 
   return (
     <Layout>
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-20 gap-y-0 w-9/12">
+      <section className="xl:w-5/12 mx-10 md:mx-0">
+        <h1 className="text-3xl font-bold mb-8">
+          Projects I've worked on recently ...
+        </h1>
         {projectDisplay}
       </section>
     </Layout>

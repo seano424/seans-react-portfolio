@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { BsMoon, BsSun } from "react-icons/bs";
+import { BiMoon, BiSun } from "react-icons/bi";
 import MobileNav from "../components/MobileNav";
 
 export default function Navbar() {
@@ -11,9 +11,9 @@ export default function Navbar() {
     <button
       aria-label="Button for toggling dark mode"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="bg-gray-200 dark:bg-gray-800 ml-4 rounded p-3 h-10 w-10 focus:outline-none"
+      className="ml-4 rounded text-xl focus:outline-none"
     >
-      {theme === "dark" ? <BsSun /> : <BsMoon />}
+      {theme === "dark" ? <BiSun /> : <BiMoon />}
     </button>
   );
   return (

@@ -54,10 +54,31 @@ export default function About(props) {
           </div>
         </article>
         <article>
+          <h2 className="font-bold text-5xl tracking-wider">About</h2>
           <p className="my-12">
-            Frontend engineer focused on creating clean user interfaces with web
-            accessibility in mind. I'm fascinated by creative UI and love to
-            create visually immersive user experiences with design and code.
+            I was a Software Engineer previously found at OddCamp, where I
+            primarily worked on front end engineering using Gatsby, Rails, and
+            TailwindCSS as my toolkit. I enjoy solving complicated problems
+            using open-source software.
+          </p>
+          <p className="my-12">
+            I was born in Kansas City, went to University in Kansas, and then
+            promptly moved to Thailand upon graduation to become a teacher and
+            travel the world for a few years. Since early 2015 I’ve been setting
+            up in such varied cities as Bangkok, Ho Chi Minh City, Huelva and
+            Murcia, Spain, and Playa del Carmen, Mexico where I currently
+            reside. I have had the incredible privledge to travel and see more
+            of the world than most can dream of. Although I loved teaching and
+            was deeply passionate about my students success, I am so excited to
+            be taking on a new creative endeavor to push me even further and one
+            that can challenge me and my desire for problem solving and going
+            beyond what I already know.
+          </p>
+          <p className="my-12">
+            I am currently focused on turning myself into a front end developer
+            creating clean user interfaces with web accessibility in mind. I'm
+            fascinated by creative UI and love to create visually immersive user
+            experiences with design and code.
           </p>
           <p className="my-12">
             For the last two years, I have been mostly working on transitioning
@@ -66,15 +87,18 @@ export default function About(props) {
             from CRA and I'm loving the experience so far.
           </p>
           <p className="my-12">
-            Back in October 2020 I officially began my studies as a web
-            developer by joining the team at Le Wagon Mexico, a highly rated
-            full stack web development bootcamp with locations based all over
-            the world. In the bootcamp we focused on building apps using Ruby on
-            Rails.
+            In October 2020 I decided to take the big jump and began my studies
+            as a web developer by joining the team at Le Wagon Mexico, a highly
+            rated full stack web development bootcamp with locations based all
+            over the world. In the bootcamp we focused on building apps using
+            Ruby on Rails, Bootstrap, PostgreSQL, and Heroku for deployment.
+            Since then I have been dabbling in other technologies, specifically
+            React and JS - building client websites using a combination of Next
+            JS, TailwindCSS, and Sanity CMS.
           </p>
           <p className="my-12">
             Few things that I am currently learning and getting comfortable in
-            are Sanity CMS and Test-Driven React application development.
+            are Typescript and Test-Driven React application development.
           </p>
           <div className="my-12">
             <p className="mb-4">

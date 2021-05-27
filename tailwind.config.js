@@ -13,6 +13,7 @@ module.exports = {
       },
       colors: {
         primary: "#FF017E",
+        dark: "#111927",
       },
       animation: {
         "pulse-slow": "pulse 10s linear infinite",

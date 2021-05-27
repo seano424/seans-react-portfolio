@@ -22,7 +22,7 @@ export default function Navbar() {
   );
   return (
     <>
-      <nav className="sticky z-20 dark:bg-gray-900 top-0 bg-white xl:backdrop-filter backdrop-blur flex w-screen px-8 justify-between items-center py-6 lg:px-48 my-0">
+      <nav className="sticky z-20 dark:bg-gray-900 top-0 bg-gray-50 xl:backdrop-filter backdrop-blur flex w-screen px-8 justify-between items-center py-6 lg:px-48 my-0">
         <aside className="lg:hidden pl-2">{button}</aside>
         <aside className="flex items-center">
           <img

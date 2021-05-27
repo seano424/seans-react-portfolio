@@ -46,7 +46,7 @@ export default function Project({
           <BiShow className="mr-2" /> Preview Site
         </p>
         {open && (
-          <img
+          <Image
             alt={title}
             src={image}
             layout="responsive"

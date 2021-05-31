@@ -27,10 +27,9 @@ export default function Home() {
         <article className="px-1">
           <section>
             <p className="pb-7">
-              I am a Frontend web developer specializing in building creative
-              and problem-solving modules and applications. Currently, I am
-              focused on improving the general web experience with web
-              accessibility and web standards. I am currently building the{" "}
+              I am a software developer specializing in building creative and
+              problem-solving websites and applications, with a focus on front
+              end design and development. I am currently building the{" "}
               <a
                 className="hover:underline underline hover:text-primary dark:hover:text-green-300"
                 href="https://www.karriemariebaxley.com"
@@ -38,7 +37,11 @@ export default function Home() {
               >
                 artist portfolio for Karrie Marie Baxley
               </a>
-              , a simple web app utilizing Sanity's CMS, Next, and TailwindCSS.
+              , a simple web app utilizing Sanity's CMS, NextJS, and
+              TailwindCSS. Other technologies under my belt include JS (ES6+),
+              Ruby on Rails, PostrgreSQL, Redux, Context, API's, Wordpress,
+              Sanity / Contentful CMS, as well as Heroku, Github, and Google
+              Analytics 4 implementation.
             </p>
           </section>
           <section className="flex gap-4 text-2xl justify-center py-5">

@@ -39,7 +39,7 @@ export default function Home() {
               </a>
               , a simple web app utilizing Sanity's CMS, NextJS, and
               TailwindCSS. Other technologies under my belt include JS (ES6+),
-              Ruby on Rails, PostrgreSQL, Redux, Context, API's, Wordpress,
+              Ruby on Rails, PostgreSQL, Redux, Context, API's, WordPress,
               Sanity / Contentful CMS, as well as Heroku, Github, and Google
               Analytics 4 implementation.
             </p>

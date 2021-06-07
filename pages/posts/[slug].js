@@ -37,6 +37,6 @@ export async function getStaticPaths() {
   const posts = await getAllPosts(process.env.NOTION_ID);
   return {
     paths: posts.map((row) => `/posts/${row.slug}`),
-    fallback: true,
+    fallback: false,
   };
 }

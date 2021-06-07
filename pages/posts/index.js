@@ -3,14 +3,13 @@ import Layout from "../../components/Layout";
 import Link from "next/link";
 import Article from "../../components/Article";
 
-export const getAllPosts = async (notion_id) => {
+export const getAllPosts = async (notion_id = process.env.NOTION_ID) => {
   return await fetch(
     `https://notion-api.splitbee.io/v1/table/${notion_id}`
   ).then((res) => res.json());
 };
 
 export default function Posts({ posts }) {
-  console.log(posts);
   return (
     <Layout>
       <div className="mt-12">
@@ -45,6 +44,7 @@ export async function getStaticProps() {
   return {
     props: {
       posts,
+      notion: process.env.NOTION_ID,
     },
   };
 }

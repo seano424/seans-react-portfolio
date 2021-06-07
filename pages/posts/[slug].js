@@ -3,12 +3,12 @@ import { NotionRenderer } from "react-notion";
 import Layout from "../../components/Layout";
 import { getAllPosts } from "./";
 
-export default function Post({ post, slug, blocks, id }) {
+export default function Post({ post, slug, blocks }) {
   console.log(post, slug);
   console.log(blocks);
   return (
     <Layout>
-      <section className="w-7/12 mt-10">
+      <section className="w-7/12 mt-10 dark:bg-gray-200 rounded p-5">
         <NotionRenderer blockMap={blocks} />
       </section>
     </Layout>
@@ -34,7 +34,7 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getAllPosts();
+  const posts = await getAllPosts(process.env.NOTION_ID);
   return {
     paths: posts.map((row) => `/posts/${row.slug}`),
     fallback: true,

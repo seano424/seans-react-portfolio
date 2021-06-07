@@ -30,7 +30,7 @@ export default function Navbar() {
             height="30px"
             width="30px"
             alt="Kanizsa Triangle Logo"
-            className="mr-4 hidden lg:block"
+            className="mr-4 hidden lg:block dark:bg-gray-200 rounded-lg"
           />
           <Link className="py-1 mt-1 pl-0 text-sm" href="/">
             <a className="hidden lg:flex font-bold text-2xl hover:text-primary animate-pulse-slow">

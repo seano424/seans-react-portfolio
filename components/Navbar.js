@@ -44,6 +44,11 @@ export default function Navbar() {
               Projects
             </a>
           </Link>
+          <Link href="/posts">
+            <a className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300">
+              Posts
+            </a>
+          </Link>
           <Link href="/about">
             <a className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300">
               About

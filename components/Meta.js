@@ -4,7 +4,7 @@ export default function Meta() {
   return (
     <Head>
       <title>Sean Patrick OReilly - Developer, designer, maker</title>
-      <link rel="icon" href="favicon.png" />
+      <link rel="icon" href="/favicon.png" />
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />

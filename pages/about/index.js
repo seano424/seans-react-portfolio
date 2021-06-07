@@ -2,14 +2,8 @@ import React from "react";
 import Layout from "../../components/Layout";
 import Image from "next/image";
 import { BsCaretRight } from "react-icons/bs";
-// import { FaSpotify } from "react-icons/fa";
-// import axios from "axios";
 
 export default function About(props) {
-  // const track = props.data.items[0].track.name;
-  // const artists = props.data.items[0].track.artists.map(
-  //   (artist) => artist.name
-  // );
   return (
     <Layout>
       <section className="mt-20 w-6/7 xl:w-3/7">
@@ -167,40 +161,7 @@ export default function About(props) {
             <span>Implemented Google Analytics 4 and Ahoy tracking</span>
           </p>
         </article>
-        {/* <article className="shadow dark:bg-white dark:text-gray-900 rounded p-4">
-          <div className="flex items-center">
-            <FaSpotify style={{ color: "#1AD760" }} />
-            <span className="pl-1 text-xs">
-              Last played: {track} by {artists[0]}
-            </span>
-          </div>
-        </article> */}
       </section>
     </Layout>
   );
 }
-
-// export async function getStaticProps(context) {
-//   const res = await axios.get(
-//     "https://api.spotify.com/v1/me/player/recently-played",
-//     {
-//       headers: {
-//         Authorization:
-//           "Bearer " +
-//           "BQAO6pkSA1G0Cgu220TQpYNB5L7sIPQ5G_SAQL8eh7MaEbcqgBp_vibmF_7Kw01fbaOlLfOo-o48GsE5t9muwBCMKmBVo90EUxloGhzN4fc6SjuS9onspkEWCicPPParm34BALK-AZMSGaR7DCEp", //the token is a variable which holds the token,
-//         "Content-Type": "application/json",
-//         Accept: "application/json",
-//       },
-//     }
-//   );
-
-//   if (!res.data) {
-//     return {
-//       notFound: true,
-//     };
-//   }
-
-//   return {
-//     props: { data: res.data }, // will be passed to the page component as props
-//   };
-// }

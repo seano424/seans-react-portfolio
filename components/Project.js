@@ -14,50 +14,50 @@ export default function Project({
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="md:mb-10 mb-20">
+    <section className="md:mb-10 mb-20 shadow px-20 py-5">
       <article className="flex justify-between md:items-center">
-        <div>
+        <div className="flex flex-col">
           <a
             title={site}
             href={site}
             aria-label={`Webite for project ${title}`}
             target="_blank"
-            className="text-primary hover:underline mr-1"
+            className="text-primary hover:underline mr-1 font-extrabold text-2xl"
           >
             {date} | {title}:{" "}
           </a>{" "}
-          <span>{description}</span>
+          <span className="font-extrabold">{description}</span>
         </div>
+      </article>
+      <article className="flex items-center">
+        <p
+          onClick={() => setOpen(!open)}
+          className="mb-3 hover:underline hover:text-purple-500 cursor-pointer flex pt-2 items-center"
+        >
+          <BiShow className="mr-2" /> Preview Site
+        </p>
         <a
           href={repo}
           title={repo}
           target="_blank"
           aria-label={`Github Repo for project ${title}`}
-          className="relative top-1 md:top-0"
+          className="pl-10 md:top-0 flex items-center gap-x-2"
         >
-          <FaRegGem />
+          <FaRegGem /> Github Repo
         </a>
       </article>
-      <article>
-        <p
-          onClick={() => setOpen(!open)}
-          className="mb-3 hover:underline hover:text-purple-500 cursor-pointer flex pt-2 items-center border-t-2"
-        >
-          <BiShow className="mr-2" /> Preview Site
-        </p>
-        {open && (
-          <Image
-            alt={title}
-            src={image}
-            layout="responsive"
-            width={900}
-            height={700}
-            objectFit="cover"
-            objectPosition="top"
-            priority={true}
-          />
-        )}
-      </article>
+      {open && (
+        <Image
+          alt={title}
+          src={image}
+          layout="responsive"
+          width={900}
+          height={700}
+          objectFit="cover"
+          objectPosition="top"
+          priority={true}
+        />
+      )}
     </section>
   );
 }

@@ -21,7 +21,7 @@ export default function Home() {
                     width={250}
                     objectFit="cover"
                     objectPosition="top"
-                    priority
+                    priority={true}
                 />
                 <h1 className="text-6xl font-bold py-3">Sean Patrick</h1>
 

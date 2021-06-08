@@ -3,7 +3,7 @@ import Layout from '../../components/Layout'
 import Link from 'next/link'
 
 export const getAllPosts = async (
-    notion_id = process.env.NEXT_PUBLIC_NOTION_ID
+    notion_id = '6adb3253346d49cbbd70077cb772e4b9'
 ) => {
     return await fetch(
         `https://notion-api.splitbee.io/v1/table/${notion_id}`
@@ -42,12 +42,12 @@ export default function Posts({ posts }) {
 }
 
 export async function getStaticProps() {
-    const posts = await getAllPosts(process.env.NEXT_PUBLIC_NOTION_ID)
+    const posts = await getAllPosts('6adb3253346d49cbbd70077cb772e4b9')
 
     return {
         props: {
             posts,
-            notion: process.env.NEXT_PUBLIC_NOTION_ID,
+            notion: '6adb3253346d49cbbd70077cb772e4b9',
         },
     }
 }

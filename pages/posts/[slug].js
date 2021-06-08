@@ -38,7 +38,7 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 export async function getStaticPaths() {
-    const posts = await getAllPosts(process.env.NEXT_PUBLIC_NOTION_ID)
+    const posts = await getAllPosts('6adb3253346d49cbbd70077cb772e4b9')
     return {
         paths: posts.map((row) => `/posts/${row.slug}`),
         fallback: false,

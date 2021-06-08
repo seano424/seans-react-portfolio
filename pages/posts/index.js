@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 import Link from 'next/link'
-import Article from '../../components/Article'
 
 export const getAllPosts = async (
     notion_id = process.env.NEXT_PUBLIC_NOTION_ID

@@ -48,8 +48,9 @@ export default function Contact() {
   const messageCharsLeft = 250 - message.length
   const warning = 'bg-red-500 text-white'
   const inputStyles =
-    'border-2 py-1 px-2 w-full focus:outline-none focus:border-gray-600'
-  const titleStyles = 'mb-2 font-light opacity-70'
+    'border-4 border-green-200 py-1 px-2 w-full focus:outline-none focus:border-gray-600 dark:bg-white'
+  const titleStyles =
+    'mb-2 uppercase dark:text-gray-900 font-bold opacity-70 tracking-wider'
 
   return (
     <Layout>
@@ -69,7 +70,7 @@ export default function Contact() {
           {statusMessage}
         </p>
         <form
-          className="flex w-full flex-col bg-white p-10"
+          className="flex w-full flex-col bg-white p-10 rounded shadow"
           id="contact-form"
           onSubmit={handleSubmit(onSubmit)}
         >
@@ -101,7 +102,7 @@ export default function Contact() {
           </article>
           <h2 className={titleStyles}>Message</h2>
           <textarea
-            className="h-40 border-2 px-2 py-1 focus:outline-none focus:border-gray-600"
+            className="h-40 border-4 border-green-200 dark:bg-white px-2 py-1 focus:outline-none focus:border-gray-600"
             name="message"
             {...register('message', { required: true, maxLength: 250 })}
           />
@@ -113,7 +114,7 @@ export default function Contact() {
           )}
           <p className="my-4">{messageCharsLeft} characters remaining</p>
           <input
-            className="py-2 cursor-pointer transform transition-all duration-200 ease-linear hover:scale-105 hover:text-gray-500"
+            className="py-2 dark:bg-green-200 dark:text-gray-900 font-bold rounded tracking-widest cursor-pointer transform transition-all duration-200 ease-linear hover:scale-105 hover:text-gray-500"
             type="submit"
             value="Send"
           />

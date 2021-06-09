@@ -1,25 +1,25 @@
-import { useState } from "react";
-import Link from "next/link";
-import { useTheme } from "next-themes";
-import { BiMoon, BiSun } from "react-icons/bi";
-import MobileNav from "../components/MobileNav";
+import { useState } from 'react'
+import Link from 'next/link'
+import { useTheme } from 'next-themes'
+import { BiMoon, BiSun } from 'react-icons/bi'
+import MobileNav from '../components/MobileNav'
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const [open, setOpen] = useState(false)
+  const { theme, setTheme } = useTheme()
   const button = (
     <button
       aria-label="Button for toggling dark mode"
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       className="ml-4 rounded text-xl focus:outline-none"
     >
-      {theme === "dark" ? (
+      {theme === 'dark' ? (
         <BiSun className="hover:text-yellow-600 transition-all duration-500 ease-linear" />
       ) : (
         <BiMoon className="hover:text-purple-600 transition-all duration-500 ease-linear" />
       )}
     </button>
-  );
+  )
   return (
     <>
       <nav className="sticky z-20 dark:bg-gray-900 top-0 backdrop-filter backdrop-blur flex w-screen px-8 justify-between items-center py-6 lg:px-48 my-0">
@@ -54,6 +54,11 @@ export default function Navbar() {
               About
             </a>
           </Link>
+          <Link href="/contact">
+            <a className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300">
+              Contact
+            </a>
+          </Link>
           {button}
         </div>
         <article
@@ -83,11 +88,11 @@ export default function Navbar() {
       </nav>
       <section
         className={`fixed z-10 top-20 bottom-0 w-full bg-white dark:bg-gray-900  ${
-          open ? "opacity-100 h-full" : "opacity-0 h-0"
+          open ? 'opacity-100 h-full' : 'opacity-0 h-0'
         }`}
       >
         {open && <MobileNav />}
       </section>
     </>
-  );
+  )
 }

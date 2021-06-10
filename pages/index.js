@@ -40,10 +40,10 @@ export default function Home() {
               end design and development. I am currently building the{' '}
               <a
                 className="hover:underline underline hover:text-primary dark:hover:text-green-300"
-                href="https://www.karriemariebaxley.com"
+                href="https://www.fromthelodgewithdaniel.com"
                 target="_blank"
               >
-                artist portfolio for Karrie Marie Baxley
+                artist portfolio for Daniel Baxley
               </a>
               , a simple web app utilizing Sanity's CMS, NextJS, and
               TailwindCSS. Other technologies under my belt include JS (ES6+),

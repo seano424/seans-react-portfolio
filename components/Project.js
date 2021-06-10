@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { FaRegGem } from "react-icons/fa";
-import { BiShow } from "react-icons/bi";
-import Image from "next/image";
+import React, { useState } from 'react'
+import { FaRegGem } from 'react-icons/fa'
+import { BiShow } from 'react-icons/bi'
+import Image from 'next/image'
 
 export default function Project({
   title,
@@ -11,10 +11,16 @@ export default function Project({
   image,
   date,
 }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
+
+  const imageStyles = {
+    height: '16em',
+    objectFit: 'cover',
+    objectPosition: 'top',
+  }
 
   return (
-    <section className="md:mb-10 mb-20 shadow px-20 py-5">
+    <section className="md:mb-10 mb-20 shadow px-20 py-5 flex flex-col items-center text-center">
       <article className="flex justify-between md:items-center">
         <div className="flex flex-col">
           <a
@@ -24,9 +30,9 @@ export default function Project({
             target="_blank"
             className="text-primary hover:underline mr-1 font-extrabold text-2xl"
           >
-            {date} | {title}:{" "}
-          </a>{" "}
-          <span className="font-extrabold">{description}</span>
+            {date} | {title}:{' '}
+          </a>{' '}
+          <span className="font-extrabold my-4">{description}</span>
         </div>
       </article>
       <article className="flex items-center">
@@ -47,7 +53,9 @@ export default function Project({
         </a>
       </article>
       {open && (
-        <Image
+        <img
+          style={imageStyles}
+          className="rounded"
           alt={title}
           src={image}
           layout="responsive"
@@ -55,9 +63,9 @@ export default function Project({
           height={700}
           objectFit="cover"
           objectPosition="top"
-          priority={true}
+          priority="true"
         />
       )}
     </section>
-  );
+  )
 }

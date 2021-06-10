@@ -17,7 +17,7 @@ module.exports = {
         dark: '#111927',
       },
       animation: {
-        'pulse-slow': 'pulse 10s linear infinite',
+        'pulse-slow': 'pulse 5s linear infinite',
       },
     },
   },

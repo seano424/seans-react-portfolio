@@ -48,7 +48,7 @@ export default function Contact() {
   const messageCharsLeft = 250 - message.length
   const warning = 'bg-red-500 text-white'
   const inputStyles =
-    'border-4 border-green-200 py-1 px-2 w-full focus:outline-none focus:border-gray-600 dark:bg-white'
+    'border-4 border-green-200 dark:text-gray-900 py-1 px-2 w-full focus:outline-none focus:border-gray-600 dark:bg-white'
   const titleStyles =
     'mb-2 uppercase dark:text-gray-900 font-bold opacity-70 tracking-wider'
 

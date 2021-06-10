@@ -79,7 +79,7 @@ export default function Home() {
             <a
               className="hover:text-primary"
               target="_blank"
-              href="/images/seanporeilly.pdf"
+              href="/images/resume.png"
             >
               My Resume
             </a>

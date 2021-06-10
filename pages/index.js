@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="favicon.png" />
       </Head>
 
-      <section className="lg:w-4/7 w-6/7 text-center">
+      <section className="lg:w-4/7 w-6/7 text-center mt-8">
         <img
           style={imageStyles}
           className="rounded-full m-auto"
@@ -28,7 +28,7 @@ export default function Home() {
           //   width={250}
           //   objectfit="cover"
           //   objectposition="top"
-          priority={true}
+          //   priority={true}
         />
         <h1 className="text-6xl font-bold py-3">Sean Patrick</h1>
 

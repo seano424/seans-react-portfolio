@@ -1,22 +1,29 @@
-import React from "react";
-import Layout from "../../components/Layout";
-import Image from "next/image";
-import { BsCaretRight } from "react-icons/bs";
+import React from 'react'
+import Layout from '../../components/Layout'
+import Image from 'next/image'
+import { BsCaretRight } from 'react-icons/bs'
 
 export default function About(props) {
+  const imageStyles = {
+    width: '7em',
+    height: '7em',
+    objectFit: 'cover',
+    // objectPosition: 'top',
+  }
   return (
     <Layout>
       <section className="mt-20 w-6/7 xl:w-3/7">
-        <article className="flex flex-col items-center justify-center mb-16">
-          <Image
-            className="rounded-full"
+        <article className="flex flex-col items-center justify-center mb-8">
+          <img
+            style={imageStyles}
+            className="rounded-full m-auto"
             src="/images/mebw.jpg"
             alt="Image of Sean OReilly"
-            height={100}
-            width={100}
-            objectFit="cover"
-            objectPosition="center"
-            priority
+            // height={100}
+            // width={100}
+            // objectFit="cover"
+            // objectPosition="center"
+            // priority
           />
           <h1 className="font-bold text-base tracking-wider mt-6 mb-3 uppercase">
             Sean OReilly
@@ -135,7 +142,7 @@ export default function About(props) {
         <article className="mb-20">
           <h3 className="text-3xl font-bold my-10">Where I've worked - </h3>
           <h5 className=" font-semibold mt-5 opacity-90 text-lg">
-            Frontend engineer (intern) -{" "}
+            Frontend engineer (intern) -{' '}
             <a
               className=" hover:text-green-300 hover:underline transit duration-100 ease-linear"
               href="https://www.oddcamp.com/"
@@ -145,23 +152,23 @@ export default function About(props) {
           </h5>
           <p className="mb-5 opacity-60">January 2021 - May 2021</p>
           <p className="flex items-center mb-2">
-            <BsCaretRight />{" "}
+            <BsCaretRight />{' '}
             <span>
               Worked on the design and prototype of the main landing page
             </span>
           </p>
           <p className="flex items-center mb-2">
-            <BsCaretRight />{" "}
+            <BsCaretRight />{' '}
             <span>
               Improved the overall SEO optimization and worked on deployements
             </span>
           </p>
           <p className="flex items-center mb-2">
-            <BsCaretRight />{" "}
+            <BsCaretRight />{' '}
             <span>Implemented Google Analytics 4 and Ahoy tracking</span>
           </p>
         </article>
       </section>
     </Layout>
-  );
+  )
 }

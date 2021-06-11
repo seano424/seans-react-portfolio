@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "../styles/Home.module.css";
+import React from 'react'
+import styles from '../styles/Home.module.css'
 
 export default function Footer() {
   return (
@@ -13,5 +13,5 @@ export default function Footer() {
         @seano424
       </a>
     </footer>
-  );
+  )
 }

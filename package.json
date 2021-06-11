@@ -7,12 +7,20 @@
     "build": "next build",
     "start": "next start"
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "dependencies": {
     "axios": "^0.21.1",
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "emailjs-com": "^3.0.2",
+    "express": "^4.17.1",
     "next": "10.2.0",
     "next-themes": "^0.0.14",
+    "nodemailer": "^6.6.1",
     "notion-api-worker": "^0.1.0",
     "prismjs": "^1.23.0",
     "react": "17.0.2",

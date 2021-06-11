@@ -3,6 +3,9 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      inset: {
+        0.5: '0.15rem',
+      },
       width: {
         '1/7': '14.2857143%',
         '2/7': '28.5714286%',

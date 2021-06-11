@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaRegGem } from 'react-icons/fa'
+import { FaRegGem, FaGithub } from 'react-icons/fa'
 import { BiShow } from 'react-icons/bi'
 import Image from 'next/image'
 
@@ -20,50 +20,53 @@ export default function Project({
   }
 
   return (
-    <section className="md:mb-10 mb-20 shadow px-20 py-5 flex flex-col items-center text-center">
+    <section className="mb-10 dark:bg-gray-800 rounded-3xl shadow px-10 py-5 flex flex-col ">
       <article className="flex justify-between md:items-center">
         <div className="flex flex-col">
+          <span className="font-semibold dark:text-gray-500">
+            {description}
+          </span>
           <a
             title={site}
             href={site}
             aria-label={`Webite for project ${title}`}
             target="_blank"
-            className="text-primary hover:underline mr-1 font-extrabold text-2xl"
+            className="text-primary transition-all duration-300 ease-linear pt-3 pb-1 dark:hover:text-primary dark:hover:text-opacity-90 dark:text-white hover:underline mr-1 font-extrabold text-2xl"
           >
             {date} | {title}:{' '}
           </a>{' '}
-          <span className="font-extrabold my-4">{description}</span>
         </div>
       </article>
-      <article className="flex items-center">
+      <article className="flex gap-x-4 pb-4">
         <p
           onClick={() => setOpen(!open)}
-          className="mb-3 hover:underline hover:text-purple-500 cursor-pointer flex pt-2 items-center"
+          className="flex items-center gap-x-1 dark:bg-green-400 px-4 py-2 rounded-full cursor-pointer"
         >
-          <BiShow className="mr-2" /> Preview Site
+          <BiShow className="text-2xl" />
+          <span>Preview</span>
         </p>
         <a
           href={repo}
           title={repo}
           target="_blank"
           aria-label={`Github Repo for project ${title}`}
-          className="pl-10 md:top-0 flex items-center gap-x-2"
+          className="flex gap-x-1 items-center dark:bg-purple-400 px-4 py-2 rounded-full cursor-pointer"
         >
-          <FaRegGem /> Github Repo
+          <span>GitHub</span> <FaGithub className="text-2xl" />
         </a>
       </article>
       {open && (
-        <img
+        <Image
           style={imageStyles}
           className="rounded"
           alt={title}
           src={image}
           layout="responsive"
-          width={900}
-          height={700}
+          width={9}
+          height={7}
           objectFit="cover"
           objectPosition="top"
-          priority="true"
+          priority={true}
         />
       )}
     </section>

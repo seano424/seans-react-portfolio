@@ -87,7 +87,7 @@ export default function Navbar() {
         </article>
       </nav>
       <section
-        className={`fixed z-10 top-20 bottom-0 w-full bg-white dark:bg-gray-900  ${
+        className={`fixed z-10 top-20 bottom-0 w-full bg-white dark:bg-dark  ${
           open ? 'opacity-100 h-full' : 'opacity-0 h-0'
         }`}
       >

@@ -101,6 +101,7 @@ export default function Home() {
                   <div className="w-full">
                     {/* <h2 className={titleStyles}>Name</h2> */}
                     <input
+                      required
                       className={inputStyles}
                       placeholder="Name"
                       onChange={handleStateChange}
@@ -111,6 +112,7 @@ export default function Home() {
                   <div className="w-full">
                     {/* <h2 className={titleStyles}>Email</h2> */}
                     <input
+                      required
                       className={inputStyles}
                       placeholder="Email"
                       onChange={handleStateChange}
@@ -127,7 +129,7 @@ export default function Home() {
                   name="message"
                   value={mailerState.message}
                 />
-                <button className="py-2 px-3 mt-4 flex m-auto bg-gray-100 dark:bg-green-300 dark:text-gray-900 font-bold rounded tracking-widest cursor-pointer transform transition-all duration-200 ease-linear hover:scale-125 hover:text-gray-500">
+                <button className="py-2 px-3 mt-4 flex m-auto bg-gray-100 dark:bg-green-300 dark:text-gray-900 font-bold rounded tracking-widest cursor-pointer transform transition-all duration-200 ease-linear hover:scale-125 hover:text-gray-500 focus:outline-none">
                   Send Message
                 </button>
               </fieldset>

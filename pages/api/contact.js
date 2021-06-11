@@ -12,11 +12,11 @@ export default function (req, res) {
     service: 'gmail',
     auth: {
       type: 'OAuth2',
-      user: process.env.EMAIL,
-      pass: process.env.WORD,
-      clientId: process.env.OAUTH_CLIENTID,
-      clientSecret: process.env.OAUTH_CLIENT_SECRET,
-      refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+      user: process.env.NEXT_PUBLIC_VERCEL_ENV_EMAIL,
+      pass: process.env.NEXT_PUBLIC_VERCEL_ENV_WORD,
+      clientId: process.env.NEXT_PUBLIC_VERCEL_ENV_OAUTH_CLIENTID,
+      clientSecret: process.env.NEXT_PUBLIC_VERCEL_ENV_OAUTH_CLIENT_SECRET,
+      refreshToken: process.env.NEXT_PUBLIC_VERCEL_ENV_OAUTH_REFRESH_TOKEN,
     },
   })
 
@@ -28,7 +28,7 @@ export default function (req, res) {
 
   let mailOptions = {
     from: `${req.body.mailerState.email}`,
-    to: process.env.EMAIL,
+    to: process.env.NEXT_PUBLIC_VERCEL_ENV_EMAIL,
     subject: `Message from: ${req.body.mailerState.email}`,
     text: `${req.body.mailerState.message}`,
   }

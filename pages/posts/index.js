@@ -6,7 +6,7 @@ export const getAllPosts = async (
   notion_id = '6adb3253346d49cbbd70077cb772e4b9'
 ) => {
   return await fetch(
-    `https://notion-api.splitbee.io/v1/table/${notion_id}`
+    `https://notion-api.splitbee.io/v1/table/${process.env.NEXT_PUBLIC_VERCEL_ENV_NOTION_ID}`
   ).then((res) => res.json())
 }
 

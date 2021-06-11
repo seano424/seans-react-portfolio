@@ -4,7 +4,7 @@ import Layout from '../../components/Layout'
 
 export default function Home() {
   const [statusMessage, setStatusMessage] = useState(
-    'Sweet! Your message has been sent successfully.'
+    'Thanks for getting in touch!'
   )
   const [isNotified, setIsNotified] = useState(false)
   const [isError, setIsError] = useState(false)
@@ -39,7 +39,7 @@ export default function Home() {
         const resData = await res
         console.log(resData)
         if (resData.status === 'success') {
-          setStatusMessage('Sweet! Your message has been sent successfully.')
+          setStatusMessage('Thank you for getting in touch!')
           setIsNotified(true)
           setTimeout(() => {
             setIsNotified(false)
@@ -75,7 +75,7 @@ export default function Home() {
 
       <Layout>
         <section className=" w-5/12">
-          <article className="flex flex-col justify-center h-20 mt-8 mb-2">
+          <article className="flex flex-col justify-center h-20 mt-8 mb-8">
             <h1
               className={`text-5xl dark:text-white font-bold transition-all duration-200 ease-linear ${
                 isNotified && 'opacity-0'

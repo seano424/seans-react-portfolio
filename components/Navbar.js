@@ -54,7 +54,7 @@ export default function Navbar() {
               About
             </a>
           </Link>
-          <Link href="/contact">
+          <Link href="/contact-me">
             <a className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300">
               Contact
             </a>

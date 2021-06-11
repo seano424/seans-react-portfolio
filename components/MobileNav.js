@@ -23,7 +23,7 @@ export default function MobileNav() {
           About
         </a>
       </Link>
-      <Link href="/contact">
+      <Link href="/contact-me">
         <a className="mt-4 text-4xl uppercase hover:bg-green-200 rounded px-2">
           Contact
         </a>

@@ -74,7 +74,7 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <section className=" w-5/12">
+        <section className="w-10/12 lg:w-5/12">
           <article className="flex flex-col justify-center h-20 mt-8 mb-8">
             <h1
               className={`text-5xl dark:text-white font-bold transition-all duration-200 ease-linear ${

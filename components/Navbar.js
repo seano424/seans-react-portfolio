@@ -2,11 +2,22 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import { BiMoon, BiSun } from 'react-icons/bi'
+import * as Scroll from 'react-scroll'
 import MobileNav from '../components/MobileNav'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const { theme, setTheme } = useTheme()
+  let scroller = Scroll.scroller
+
+  const scrollTo = () => {
+    scroller.scrollTo('myElement', {
+      duration: 1000,
+      delay: 50,
+      smooth: true,
+      offset: -150,
+    })
+  }
   const button = (
     <button
       aria-label="Button for toggling dark mode"
@@ -39,24 +50,35 @@ export default function Navbar() {
           </Link>
         </aside>
         <div className="hidden lg:flex">
-          <Link href="/projects">
+          <a
+            onClick={scrollTo}
+            className="py-1 px-2 cursor-pointer text-sm sm:text-base sm:px-4 dark:text-gray-300"
+          >
+            projects
+          </a>
+
+          <Link href="/about">
             <a className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300">
-              Projects
+              about
             </a>
           </Link>
           <Link href="/posts">
             <a className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300">
-              Posts
-            </a>
-          </Link>
-          <Link href="/about">
-            <a className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300">
-              About
+              posts
             </a>
           </Link>
           <Link href="/contact-me">
             <a className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300">
-              Contact
+              contact
+            </a>
+          </Link>
+
+          <Link href="/images/resume.pdf">
+            <a
+              target="_blank"
+              className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300"
+            >
+              resume
             </a>
           </Link>
           {button}

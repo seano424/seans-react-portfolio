@@ -1,16 +1,25 @@
-import { useState } from 'react'
 import Head from 'next/head'
-import Layout from '../components/Layout'
 import Image from 'next/image'
-import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
+import { v4 as uuidv4 } from 'uuid'
+import * as Scroll from 'react-scroll'
+
+import Layout from '../components/Layout'
+import Project from '../components/Project'
+import projects from '../lib/projectData'
 
 export default function Home() {
-  const imageStyles = {
-    width: '10em',
-    height: '10em',
-    objectFit: 'cover',
-    // objectPosition: 'top',
+  const projectDisplay = projects.map((p) => <Project {...p} key={uuidv4()} />)
+  let scroller = Scroll.scroller
+
+  const scrollTo = () => {
+    scroller.scrollTo('myElement', {
+      duration: 1000,
+      delay: 50,
+      smooth: true,
+      offset: -150,
+    })
   }
+
   return (
     <Layout>
       <Head>
@@ -18,72 +27,40 @@ export default function Home() {
         <link rel="icon" href="favicon.png" />
       </Head>
 
-      <section className="lg:w-4/7 w-6/7 text-center mt-8">
-        <img
-          style={imageStyles}
+      <section className="lg:w-4/7 w-6/7 text-center lg:mt-8 mb-20">
+        <Image
           className="rounded-full m-auto"
           src="/images/mebw.jpg"
           alt="Image of Sean OReilly"
-          //   height={250}
-          //   width={250}
-          //   objectfit="cover"
-          //   objectposition="top"
-          //   priority={true}
+          height={150}
+          width={150}
+          priority={true}
+          objectFit="cover"
         />
-        <h1 className="text-6xl font-bold py-3">Sean Patrick</h1>
+        <h1 className="text-6xl font-bold py-8">Sean Patrick</h1>
 
-        <article className="px-1">
-          <section>
-            <p className="pb-7">
-              I am a software developer specializing in building creative and
-              problem-solving websites and applications, with a focus on front
-              end design and development. I am currently building the{' '}
-              <a
-                className="hover:underline underline hover:text-primary dark:hover:text-green-300"
-                href="https://www.fromthelodgewithdaniel.com"
-                target="_blank"
-              >
-                artist portfolio for Daniel Baxley
-              </a>
-              , a simple web app utilizing Sanity's CMS, NextJS, and
-              TailwindCSS. Other technologies under my belt include JS (ES6+),
-              Ruby on Rails, PostgreSQL, Redux, Context, API's, WordPress,
-              Sanity / Contentful CMS, as well as Heroku, Github, and Google
-              Analytics 4 implementation.
+        <article className="lg:px-36 text-lg px-1">
+          <div>
+            <p className="leading-relaxed">
+              I am a front-end developer specializing in bringing forth
+              beautiful and clean designs. I make websites and apps with React,
+              JavaScript (ES6+), NextJS, JAMstack architecture, and Ruby on
+              Rails. Currently, I am building using the jam stack. Other
+              technologies under my belt include JS(ES6+), Ruby on Rails,
+              PostgreSQL, APIs, and CMS implementation.
             </p>
-          </section>
-          <section className="flex gap-4 text-2xl justify-center py-5">
-            <a
-              className="flex items-center hover:text-primary transition-all duration-200 ease-linear"
-              href="https://twitter.com/sea_oreilly"
-              target="_blank"
-            >
-              <FiTwitter />
-            </a>
-            <a
-              className="flex items-center hover:text-primary transition-all duration-300 ease-linear"
-              href="https://github.com/seano424"
-              target="_blank"
-            >
-              <FiGithub />
-            </a>
-            <a
-              className="flex items-center hover:text-primary transition-all duration-500 ease-linear"
-              href="https://www.linkedin.com/in/sea-oreilly/"
-              target="_blank"
-            >
-              <FiLinkedin />
-            </a>
-          </section>
-          <section>
-            <a
-              className="hover:text-primary"
-              target="_blank"
-              href="/images/resume.png"
-            >
-              My Resume
-            </a>
-          </section>
+          </div>
+        </article>
+      </section>
+
+      <hr />
+
+      <section>
+        <article
+          name="myElement"
+          className="grid xl:grid-cols-2 gap-x-10 mx-10 lg:mx-56"
+        >
+          {projectDisplay}
         </article>
       </section>
     </Layout>

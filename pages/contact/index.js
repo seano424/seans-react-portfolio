@@ -14,12 +14,12 @@ export default function Contact() {
     formState: { errors },
   } = useForm()
 
-  const onSubmit = async (data) => {
+  const onSubmit = async () => {
     const form = document.querySelector('#contact-form')
 
     const { sendForm, init } = (await import('emailjs-com')).default
 
-    init('user_RZe3wfpwRqUFxAV07nmSv')
+    init(process.env.NEXT_PUBLIC_CONTACT)
     sendForm('default_service', 'template_cauvbxi', '#contact-form').then(
       function (response) {
         console.log('SUCCESS!', response.status, response.text)

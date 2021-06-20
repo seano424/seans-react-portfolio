@@ -8,11 +8,11 @@ export default function MobileNav() {
           Sean Patrick
         </a>
       </Link>
-      <Link href="/projects">
+      {/* <Link href="/projects">
         <a className="mt-4 text-4xl uppercase hover:bg-green-200 rounded px-2">
           Projects
         </a>
-      </Link>
+      </Link> */}
       <Link href="/posts">
         <a className="mt-4 text-4xl uppercase hover:bg-green-200 rounded px-2">
           Posts

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { v4 as uuidv4 } from 'uuid'
 import * as Scroll from 'react-scroll'
+import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 import Layout from '../components/Layout'
 import Project from '../components/Project'
@@ -37,8 +38,30 @@ export default function Home() {
           priority={true}
           objectFit="cover"
         />
-        <h1 className="text-6xl font-bold py-8">Sean Patrick</h1>
-
+        <h1 className="text-6xl font-bold my-4">Sean Patrick</h1>
+        <article className="flex justify-center gap-x-4 text-xl mb-4">
+          <a
+            className=" hover:text-primary transition-all duration-200 ease-linear"
+            href="https://twitter.com/sea_oreilly"
+            target="_blank"
+          >
+            <FiTwitter />
+          </a>
+          <a
+            className="hover:text-primary transition-all duration-300 ease-linear"
+            href="https://github.com/seano424"
+            target="_blank"
+          >
+            <FiGithub />
+          </a>
+          <a
+            className="hover:text-primary transition-all duration-500 ease-linear"
+            href="https://www.linkedin.com/in/sea-oreilly/"
+            target="_blank"
+          >
+            <FiLinkedin />
+          </a>
+        </article>
         <article className="lg:px-36 text-lg">
           <div className="flex flex-col">
             <p className="leading-relaxed">

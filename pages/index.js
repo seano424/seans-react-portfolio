@@ -39,7 +39,7 @@ export default function Home() {
           objectFit="cover"
         />
         <h1 className="text-6xl font-bold my-4">Sean Patrick</h1>
-        <article className="flex justify-center gap-x-4 text-xl mb-4">
+        <article className="flex justify-center gap-x-4 text-sm mb-4">
           <a
             className=" hover:text-primary transition-all duration-200 ease-linear"
             href="https://twitter.com/sea_oreilly"
@@ -74,7 +74,7 @@ export default function Home() {
             </p>
             <a
               onClick={scrollTo}
-              className="p-2 w-2/7 mt-4 rounded-full text-center self-center cursor-pointer text-sm sm:text-base sm:px-4 dark:text-gray-300 bg-gray-200"
+              className="p-2 w-2/7 mt-4 rounded-full text-center self-center cursor-pointer text-sm sm:text-base sm:px-4 bg-gray-200 dark:bg-gray-50 dark:text-gray-900 transition-all duration-500 ease-linear animate-pulse-slow"
             >
               Projects...
             </a>

@@ -27,7 +27,7 @@ export default function Home() {
         <link rel="icon" href="favicon.png" />
       </Head>
 
-      <section className="lg:w-4/7 w-6/7 text-center lg:mt-8 mb-20">
+      <section className="lg:w-7/12 w-6/7 text-center lg:mt-8 mb-20">
         <Image
           className="rounded-full m-auto"
           src="/images/mebw.jpg"
@@ -39,8 +39,8 @@ export default function Home() {
         />
         <h1 className="text-6xl font-bold py-8">Sean Patrick</h1>
 
-        <article className="lg:px-36 text-lg px-1">
-          <div>
+        <article className="lg:px-36 text-lg">
+          <div className="flex flex-col">
             <p className="leading-relaxed">
               I am a front-end developer specializing in bringing forth
               beautiful and clean designs. I make websites and apps with React,
@@ -49,6 +49,12 @@ export default function Home() {
               technologies under my belt include JS(ES6+), Ruby on Rails,
               PostgreSQL, APIs, and CMS implementation.
             </p>
+            <a
+              onClick={scrollTo}
+              className="p-2 w-2/7 mt-4 rounded-full text-center self-center cursor-pointer text-sm sm:text-base sm:px-4 dark:text-gray-300 bg-gray-200"
+            >
+              Projects...
+            </a>
           </div>
         </article>
       </section>

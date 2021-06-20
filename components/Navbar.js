@@ -50,12 +50,12 @@ export default function Navbar() {
           </Link>
         </aside>
         <div className="hidden lg:flex">
-          <a
+          {/* <a
             onClick={scrollTo}
             className="py-1 px-2 cursor-pointer text-sm sm:text-base sm:px-4 dark:text-gray-300"
           >
             projects
-          </a>
+          </a> */}
 
           <Link href="/about">
             <a className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300">

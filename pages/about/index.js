@@ -12,8 +12,8 @@ export default function About() {
 
           <aside>
             <p className="my-4 leading-relaxed">
-              I am a front-end developer previously found at OddCamp, where I
-              worked on front-end engineering using React, Rails, and
+              I am a fullstack developer previously found at OddCamp, where I
+              worked as a front-end engineer using React, Rails, and
               TailwindCSS as my toolkit. I enjoy solving complicated problems
               using open-source software.{' '}
             </p>
@@ -27,7 +27,7 @@ export default function About() {
               going beyond what I already know.
             </p>
             <p className="my-4 leading-relaxed">
-              Currently, I am focused on turning myself into a front-end
+              Currently, I am focused on turning myself into a fullstack
               developer, creating clean user interfaces with web accessibility
               in mind. I'm fascinated by creative UI and love to create visually
               immersive user experiences with design and code.
@@ -41,8 +41,8 @@ export default function About() {
             <p className="my-4 leading-relaxed">
               In October 2020, I decided to take the big jump and began my
               studies as a web developer by joining the team at Le Wagon Mexico,
-              a highly rated full-stack web development boot camp with locations
-              based all over the world. The boot camp focused on Ruby on Rails,
+              a highly rated full-stack development bootcamp with locations
+              based all over the world. The bootcamp focused on Ruby on Rails,
               Bootstrap, PostgreSQL, and JavaScript.{' '}
             </p>
             <p className="my-4 leading-relaxed">

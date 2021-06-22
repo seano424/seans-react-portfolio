@@ -65,7 +65,7 @@ export default function Home() {
         <article className="lg:px-36 text-lg">
           <div className="flex flex-col">
             <p className="leading-relaxed">
-              I am a front-end developer specializing in bringing forth
+              I am a fullstack developer specializing in bringing forth
               beautiful and clean designs. I make websites and apps with React,
               JavaScript (ES6+), NextJS, JAMstack architecture, and Ruby on
               Rails. Currently, I am building using the jam stack. Other

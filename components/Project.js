@@ -24,7 +24,7 @@ export default function Project({
     <section className="mb-10 dark:bg-gray-800 rounded-3xl shadow px-10 py-5 flex flex-col ">
       <article className="flex justify-center text-center md:items-center">
         <div className="flex flex-col py-4">
-          <p className="text-gray-300 font-bold">{date}</p>
+          {/* <p className="text-gray-300 font-bold">{date}</p> */}
           <a
             title={site}
             href={site}

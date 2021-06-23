@@ -1,4 +1,4 @@
-This is a [Porfolio](https://seanpatrick.io/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Porfolio](https://seanpatrick.io/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). The portfolio can be found @ seanpatrick.io
 
 ## Getting Started
 

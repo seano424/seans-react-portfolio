@@ -46,11 +46,10 @@ export default function Project({
           alt={title}
           src={image}
           layout="responsive"
-          width={9}
-          height={4}
+          width={10}
+          height={6}
           objectFit="cover"
           objectPosition="top"
-          unoptimized={true}
           priority={true}
         />
       )}

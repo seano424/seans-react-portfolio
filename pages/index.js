@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useEffect } from 'react'
-import { useTheme } from 'next-themes'
 
 import { v4 as uuidv4 } from 'uuid'
 import * as Scroll from 'react-scroll'
@@ -12,13 +10,8 @@ import Project from '../components/Project'
 import projects from '../lib/projectData'
 
 export default function Home() {
-  const { theme, setTheme } = useTheme()
   const projectDisplay = projects.map((p) => <Project {...p} key={uuidv4()} />)
   let scroller = Scroll.scroller
-
-  useEffect(() => {
-    setTheme('dark')
-  }, [])
 
   const scrollTo = () => {
     scroller.scrollTo('myElement', {

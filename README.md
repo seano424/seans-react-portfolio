@@ -1,4 +1,4 @@
-# [shellbear.me](https://seanpatrick.io/)
+# [seanpatrick.io](https://seanpatrick.io/)
 
 Source code of my personal website & blog ✨
 

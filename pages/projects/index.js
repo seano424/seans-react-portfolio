@@ -8,18 +8,18 @@ export default function Projects({ data }) {
     <Layout>
       <section className="flex flex-col items-center mx-10">
         <h1 className="text-6xl font-bold mt-16 tracking-wide">Projects</h1>
-        <p className="my-10 text-xl dark:text-gray-400 text-gray-700 w-3/12 text-center">
+        <p className="my-10 text-xl dark:text-gray-400 text-gray-700 lg:w-3/12 text-center">
           I'm always working on new projects. You can find them on my{' '}
           <a
             href="https://github.com/seano424"
             target="_blank"
             className="text-black hover:text-primary dark:text-white font-bold leading-loose transition-all duration-150 ease-linear border-b-2 border-black pb-1"
           >
-            Github
+            GitHub
           </a>
           .
         </p>
-        <article className="grid grid-cols-2 gap-10">
+        <article className="grid lg:grid-cols-2 gap-10">
           {data.map((p) => (
             <Project {...p} key={uuidv4()} />
           ))}

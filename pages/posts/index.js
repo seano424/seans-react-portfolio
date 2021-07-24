@@ -11,8 +11,10 @@ export const getAllPosts = async () => {
 export default function Posts({ posts }) {
   return (
     <Layout>
-      <div className="mt-12">
-        <h1 className="text-5xl ml-2 font-bold opacity-90">Posts</h1>
+      <div className="mt-4">
+        <h1 className="text-5xl font-extrabold flex justify-start px-10">
+          Posts
+        </h1>
         {posts.map((post) => (
           <Link
             key={post.id}

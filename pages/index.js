@@ -29,7 +29,7 @@ export default function Home() {
         <link rel="icon" href="favicon.png" />
       </Head>
 
-      <section className="lg:w-7/12 w-6/7 text-center lg:mt-8 mb-20">
+      <section className="lg:w-7/12 w-6/7 text-center mb-16 lg:mt-8 lg:mb-20">
         <Image
           className="rounded-full m-auto"
           src="/images/mebw.jpg"
@@ -75,7 +75,7 @@ export default function Home() {
             </p>
             <a
               onClick={scrollTo}
-              className="p-2 w-2/7 mt-4 rounded-full text-center self-center cursor-pointer text-xl sm:px-4 font-black shadow-xl dark:bg-gray-50 dark:text-gray-900 transition-all duration-200 ease-linear hover:text-2xl  hover:text-primary"
+              className="p-4 lg:p-2 lg:w-2/7 mt-4 rounded-full text-center self-center cursor-pointer text-xl sm:px-4 font-black shadow-xl dark:bg-gray-50 dark:text-gray-900 transition-all duration-200 ease-linear hover:text-2xl  hover:text-primary"
             >
               Projects...
             </a>

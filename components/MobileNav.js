@@ -1,33 +1,27 @@
 import Link from 'next/link'
 
+const linkStyles =
+  'text-6xl font-black tracking-tight py-4 uppercase rounded px-2'
+
 export default function MobileNav() {
   return (
-    <section className="flex flex-col items-center p-20">
+    <section className="flex flex-col items-center pt-12 px-20">
       <Link href="/">
-        <a className="mt-4 text-4xl text-center uppercase hover:bg-green-200 rounded px-2">
-          Sean Patrick
-        </a>
-      </Link>
-      {/* <Link href="/projects">
-        <a className="mt-4 text-4xl uppercase hover:bg-green-200 rounded px-2">
-          Projects
-        </a>
-      </Link> */}
-      <Link href="/posts">
-        <a className="mt-4 text-4xl uppercase hover:bg-green-200 rounded px-2">
-          Posts
-        </a>
+        <a className={linkStyles}>Home</a>
       </Link>
       <Link href="/about">
-        <a className="mt-4 text-4xl uppercase hover:bg-green-200 rounded px-2">
-          About
-        </a>
+        <a className={linkStyles}>About</a>
       </Link>
-      <Link href="/contact-me">
-        <a className="mt-4 text-4xl uppercase hover:bg-green-200 rounded px-2">
-          Contact
-        </a>
+      <Link href="/projects">
+        <a className={linkStyles}>Projects</a>
       </Link>
+      <Link href="/posts">
+        <a className={linkStyles}>Blog</a>
+      </Link>
+
+      <a href="mailto:soreilly424@gmail.com" className={linkStyles}>
+        contact
+      </a>
     </section>
   )
 }

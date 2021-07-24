@@ -16,7 +16,7 @@ export default function Navbar() {
     <button
       aria-label="Button for toggling dark mode"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="ml-4 rounded text-xl focus:outline-none"
+      className="ml-4 rounded text-3xl lg:text-xl focus:outline-none"
     >
       {theme === 'dark' ? (
         <BiSun className="hover:text-yellow-600 transition-all duration-500 ease-linear" />
@@ -28,7 +28,6 @@ export default function Navbar() {
   return (
     <>
       <nav className="sticky z-20 dark:bg-dark top-0 backdrop-filter backdrop-blur w-screen mt-4 px-8 py-6 lg:px-12 lg:grid grid-cols-3">
-        <article className="lg:hidden pl-2">{button}</article>
         <article className="flex items-center">
           <img
             src="/images/kanizsa-triangle.png"
@@ -85,7 +84,7 @@ export default function Navbar() {
             </a>
           </Link>
         </article>
-        <article className="flex justify-end">
+        <article className="hidden lg:flex justify-end">
           <a
             href="mailto:soreilly424@gmail.com"
             className={`p-2 hover:text-gray-800 capitalize dark:text-white self-center`}
@@ -94,30 +93,33 @@ export default function Navbar() {
           </a>
           {button}{' '}
         </article>
-        <article
-          onClick={() => setOpen(!open)}
-          className="lg:hidden cursor-pointer flex flex-col justify-center p-3"
-        >
-          <div
-            className={`w-8 h-1 bg-gray-900 dark:bg-gray-50 rounded-lg transition-all duration-150 ease-linear relative ${
-              open ? `transform rotate-45 mt-2` : `transform rotate-0 mt-1`
-            }`}
-          />
-          <div
-            className={`w-8 h-1 bg-gray-900 dark:bg-gray-50 rounded-lg transition-all duration-150 ease-linear relative ${
-              open
-                ? `transform translate-x-5 opacity-0`
-                : `transform translate-x-0 opacity-100 mt-1 `
-            }`}
-          />
-          <div
-            className={`w-8 h-1 bg-gray-900 dark:bg-gray-50 rounded-lg transition-all duration-150 ease-linear relative ${
-              open
-                ? `transform -rotate-45 -mt-2 mb-3`
-                : `transform rotate-0 mt-1 `
-            }`}
-          />
-        </article>
+        <section className="flex items-center justify-between">
+          <article
+            onClick={() => setOpen(!open)}
+            className="lg:hidden cursor-pointer flex flex-col justify-center p-3"
+          >
+            <div
+              className={`w-8 h-1 bg-gray-900 dark:bg-gray-50 rounded-lg transition-all duration-150 ease-linear relative ${
+                open ? `transform rotate-45 mt-2` : `transform rotate-0 mt-1`
+              }`}
+            />
+            <div
+              className={`w-8 h-1 bg-gray-900 dark:bg-gray-50 rounded-lg transition-all duration-150 ease-linear relative ${
+                open
+                  ? `transform translate-x-5 opacity-0`
+                  : `transform translate-x-0 opacity-100 mt-1 `
+              }`}
+            />
+            <div
+              className={`w-8 h-1 bg-gray-900 dark:bg-gray-50 rounded-lg transition-all duration-150 ease-linear relative ${
+                open
+                  ? `transform -rotate-45 -mt-2 mb-3`
+                  : `transform rotate-0 mt-1 `
+              }`}
+            />
+          </article>
+          <article className="flex lg:hidden">{button}</article>
+        </section>
       </nav>
       <section
         className={`fixed z-10 top-20 bottom-0 w-full bg-white dark:bg-dark  ${

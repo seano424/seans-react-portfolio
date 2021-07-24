@@ -64,7 +64,7 @@ export default function Home() {
   }
 
   const inputStyles =
-    'border-2 border-gray-100 dark:border-white rounded dark:text-white py-1 px-2 w-full focus:outline-none focus:border-gray-200 dark:bg-dark'
+    'border-2 border-gray-800 dark:border-white rounded dark:text-white py-1 px-2 w-full focus:outline-none focus:border-gray-200 dark:bg-dark placeholder-gray-900 dark:placeholder-white'
 
   return (
     <>
@@ -77,7 +77,7 @@ export default function Home() {
         <section className="w-10/12 lg:w-5/12">
           <article className="flex flex-col justify-center h-20 mt-8 mb-8">
             <h1
-              className={`text-5xl dark:text-white font-bold transition-all duration-200 ease-linear ${
+              className={`text-5xl dark:text-white font-bold transition-all duration-200 ease-linear text-center ${
                 isNotified && 'opacity-0'
               }`}
             >
@@ -93,7 +93,7 @@ export default function Home() {
           </article>
           <article>
             <form
-              className="flex w-full flex-col bg-white dark:bg-dark p-10 rounded shadow-xl"
+              className="flex w-full flex-col bg-white dark:bg-dark p-10 rounded-3xl shadow-xl"
               onSubmit={submitEmail}
             >
               <fieldset>
@@ -123,7 +123,7 @@ export default function Home() {
                 </aside>
                 {/* <h2 className={titleStyles}>Message</h2> */}
                 <textarea
-                  className="h-48 border-2 border-gray-100 dark:border-white dark:text-white rounded dark:bg-dark px-2 py-1 focus:outline-none focus:border-gray-200 w-full"
+                  className="h-48 border-2 border-gray-800 dark:border-white dark:text-white rounded dark:bg-dark px-2 py-1 focus:outline-none focus:border-gray-200 w-full placeholder-gray-900 dark:placeholder-white"
                   placeholder="Message"
                   onChange={handleStateChange}
                   name="message"

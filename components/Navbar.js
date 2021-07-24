@@ -1,23 +1,17 @@
 import { useState } from 'react'
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useTheme } from 'next-themes'
 import { BiMoon, BiSun } from 'react-icons/bi'
-import * as Scroll from 'react-scroll'
+import Link from 'next/link'
 import MobileNav from '../components/MobileNav'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const { theme, setTheme } = useTheme()
-  let scroller = Scroll.scroller
+  const router = useRouter()
 
-  const scrollTo = () => {
-    scroller.scrollTo('myElement', {
-      duration: 1000,
-      delay: 50,
-      smooth: true,
-      offset: -150,
-    })
-  }
+  console.log(router.pathname === '/')
+
   const button = (
     <button
       aria-label="Button for toggling dark mode"
@@ -33,9 +27,9 @@ export default function Navbar() {
   )
   return (
     <>
-      <nav className="sticky z-20 dark:bg-dark top-0 backdrop-filter backdrop-blur flex w-screen px-8 justify-between items-center py-6 lg:px-48 my-0">
-        <aside className="lg:hidden pl-2">{button}</aside>
-        <aside className="flex items-center">
+      <nav className="sticky z-20 dark:bg-dark top-0 backdrop-filter backdrop-blur w-screen mt-4 px-8 py-6 lg:px-12 lg:grid grid-cols-3">
+        <article className="lg:hidden pl-2">{button}</article>
+        <article className="flex items-center">
           <img
             src="/images/kanizsa-triangle.png"
             height="30px"
@@ -48,41 +42,58 @@ export default function Navbar() {
               Sean Patrick
             </a>
           </Link>
-        </aside>
-        <div className="hidden lg:flex">
-          {/* <a
-            onClick={scrollTo}
-            className="py-1 px-2 cursor-pointer text-sm sm:text-base sm:px-4 dark:text-gray-300"
-          >
-            projects
-          </a> */}
-
+        </article>
+        <article className="hidden lg:flex gap-4 justify-center capitalize text-gray-900 font-bold bg-gray-400 bg-opacity-10 py-2 px-4 rounded-3xl">
+          <Link href="/">
+            <a
+              className={`p-2 hover:text-gray-800 dark:text-white w-40 text-center ${
+                router.pathname === '/' &&
+                'bg-white rounded-3xl dark:bg-gray-500'
+              }`}
+            >
+              home
+            </a>
+          </Link>
           <Link href="/about">
-            <a className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300">
+            <a
+              className={`p-2 hover:text-gray-800 dark:text-white w-40 text-center ${
+                router.pathname === '/about' &&
+                'bg-white rounded-3xl dark:bg-gray-500'
+              }`}
+            >
               about
             </a>
           </Link>
           <Link href="/posts">
-            <a className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300">
-              posts
-            </a>
-          </Link>
-          <Link href="/contact-me">
-            <a className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300">
-              contact
-            </a>
-          </Link>
-
-          <Link href="/images/resume.pdf">
             <a
-              target="_blank"
-              className="py-1 px-2 text-sm sm:text-base sm:px-4 dark:text-gray-300"
+              className={`p-2 hover:text-gray-800 dark:text-white w-40 text-center ${
+                router.pathname === '/posts' &&
+                'bg-white rounded-3xl dark:bg-gray-500'
+              }`}
             >
-              resume
+              blog
             </a>
           </Link>
-          {button}
-        </div>
+          <Link href="/projects">
+            <a
+              className={`p-2 hover:text-gray-800 dark:text-white w-40 text-center ${
+                router.pathname === '/projects' &&
+                'bg-white rounded-3xl dark:bg-gray-500'
+              }`}
+            >
+              projects
+            </a>
+          </Link>
+        </article>
+        <article className="flex justify-end">
+          <a
+            href="mailto:soreilly424@gmail.com"
+            className={`p-2 hover:text-gray-800 capitalize dark:text-white self-center`}
+          >
+            contact
+          </a>
+          {button}{' '}
+        </article>
         <article
           onClick={() => setOpen(!open)}
           className="lg:hidden cursor-pointer flex flex-col justify-center p-3"

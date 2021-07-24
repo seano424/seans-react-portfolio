@@ -75,7 +75,7 @@ export default function Home() {
             </p>
             <a
               onClick={scrollTo}
-              className="p-2 w-2/7 mt-4 rounded-full text-center self-center cursor-pointer text-sm sm:text-base sm:px-4 bg-gray-200 dark:bg-gray-50 dark:text-gray-900 transition-all duration-500 ease-linear animate-pulse-slow"
+              className="p-2 w-2/7 mt-4 rounded-full text-center self-center cursor-pointer text-xl sm:px-4 font-black shadow-xl dark:bg-gray-50 dark:text-gray-900 transition-all duration-200 ease-linear hover:text-2xl  hover:text-primary"
             >
               Projects...
             </a>
@@ -88,7 +88,7 @@ export default function Home() {
       <section>
         <article
           name="myElement"
-          className="grid xl:grid-cols-2 gap-x-10 mx-10 lg:mx-56"
+          className="grid xl:grid-cols-2 gap-x-10 mx-10 lg:mx-32"
         >
           {projectDisplay}
         </article>

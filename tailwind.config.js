@@ -16,6 +16,7 @@ module.exports = {
         101: '27rem',
       },
       colors: {
+        secondary: '#00b4d8',
         primary: '#FF017E',
         dark: '#121212',
       },
@@ -25,7 +26,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      fontSize: ['hover', 'focus'],
+    },
   },
   plugins: [],
 }

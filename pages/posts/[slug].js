@@ -16,9 +16,11 @@ export default function Post({ blocks }) {
 export async function getStaticProps({ params: { slug } }) {
   const posts = await getAllPosts()
   const post = posts.find((t) => t.slug === slug)
-  const blocks = await fetch(
-    `https://notion-api.splitbee.io/v1/page/${post.id}`
-  ).then((res) => res.json())
+  const blocks =
+    post &&
+    (await fetch(`https://notion-api.splitbee.io/v1/page/${post.id}`).then(
+      (res) => res.json()
+    ))
 
   if (!post) {
     return {

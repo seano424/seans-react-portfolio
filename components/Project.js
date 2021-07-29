@@ -22,12 +22,12 @@ export default function Project({
   }
 
   const linkStyles =
-    'flex items-center gap-x-1 lg:px-6 lg:py-3 group rounded cursor-pointer lg:bg-gray-200 lg:hover:bg-gray-300 lg:hover:text-white transition-all duration-150 ease-linear text-red-300'
+    'flex items-center gap-x-1 lg:px-6 lg:py-3 group rounded cursor-pointer lg:bg-gray-200 lg:hover:bg-gray-300 lg:hover:text-pink-100 transition-all duration-150 ease-linear text-primary font-bold'
 
   return (
-    <section className="mb-10 rounded-3xl px-10 py-5 flex flex-col dark:bg-white bg-gray-100 bg-opacity-70">
+    <section className="mb-10 rounded-3xl px-10 py-5 flex flex-col dark:bg-black bg-gray-100 border-8 bg-opacity-70">
       {open && (
-        <div className="bg-gray-600 dark:bg-opacity-100 dark:bg-white bg-opacity-10 hover:bg-opacity-10 lg:p-10 rounded-xl transform hover:scale-105 transition-all duration-200 ease-linear cursor-pointer">
+        <div className="bg-gray-600 dark:bg-opacity-100 dark:bg-black lg:p-2 rounded-xl transform hover:scale-105 transition-all duration-200 ease-linear cursor-pointer">
           <Image
             style={imageStyles}
             className="rounded-xl"
@@ -50,7 +50,7 @@ export default function Project({
             href={site}
             aria-label={`Webite for project ${title}`}
             target="_blank"
-            className="text-black transition-all duration-300 ease-linear pt-3 pb-1 dark:hover:text-primary dark:hover:text-opacity-90 dark:text-black font-bold lg:text-2xl uppercase tracking-wide items-start flex flex-col"
+            className="text-black transition-all duration-300 ease-linear pt-3 pb-1 dark:hover:text-pink-500 dark:hover:text-opacity-90 dark:text-primary font-bold lg:text-2xl uppercase tracking-wide items-start flex flex-col"
           >
             {title}
             <span className="dark:text-gray-500 pt-2 text-sm hidden lg:flex">

@@ -26,20 +26,24 @@ export default function About() {
           </h2>
           <aside>
             <p className="my-8 tracking-wider leading-relaxed text-lg font-light">
-              I'm a Le Wagon's Bootcamp Graduate currently freelancing and
-              studying computer science from open sourced resources. I started
-              working as a freelance developer the last two years.
+              I'm a Le Wagon Bootcamp Graduate currently freelancing and
+              building projects on the side. I have decided to take advantage of
+              the strange times and take the exciting plunge into developing a
+              new career!
             </p>
             <p className="my-8 tracking-wider leading-relaxed text-lg font-light">
               Since 2020, I've been living in Playa del Carmen and working
-              freelance as a Jamstack Developer. I was found previously as a
-              front-end intern for the design and engineering company, Odd Camp.
+              freelance as a Jamstack and Rails Developer. I was previously a
+              front-end intern for the design and engineering company, Odd Camp,
+              and before that I worked as a teacher.
             </p>
             <p className="my-8 tracking-wider leading-relaxed text-lg font-light">
               During my free time I enjoy diving, hiking, travelling, going to
               the beach, reading fiction and various publications about the
               newest technology trends and other programming languages, and
-              photography.
+              photography. You can find out more about me on my{' '}
+              <a href="https://www.instagram.com/sea.oreilly/">Instagram</a> or{' '}
+              <a href="https://www.github.com/seano424">GitHub</a>.
             </p>
           </aside>
         </article>

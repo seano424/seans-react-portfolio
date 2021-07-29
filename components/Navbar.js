@@ -27,7 +27,7 @@ export default function Navbar() {
   )
   return (
     <>
-      <nav className="sticky z-20 dark:bg-dark top-0 backdrop-filter backdrop-blur w-screen mt-4 px-8 py-6 lg:px-12 lg:grid grid-cols-3">
+      <nav className="sticky z-20 dark:bg-dark top-0 backdrop-filter backdrop-blur w-screen pt-4 px-8 py-6 lg:px-12 lg:grid grid-cols-3">
         <article className="flex items-center">
           <img
             src="/images/kanizsa-triangle.png"

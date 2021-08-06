@@ -1,4 +1,4 @@
-import React from 'react'
+import Avatar from '../../components/Avatar'
 import Layout from '../../components/Layout'
 import {
   SiNextDotJs,
@@ -21,9 +21,12 @@ export default function About() {
     <Layout>
       <section className="mt-8 w-6/7 xl:w-6/12">
         <article>
-          <h2 className="font-bold dark:text-white text-black text-6xl tracking-wider">
-            About
-          </h2>
+          <aside className="flex items-center justify-between">
+            <h2 className="font-bold dark:text-white text-black text-6xl tracking-wider">
+              About Sean...
+            </h2>
+            <Avatar image={'/images/avataaars.png'} />
+          </aside>
           <aside>
             <p className="my-8 tracking-wider leading-relaxed text-lg font-light">
               I'm a Le Wagon Bootcamp Graduate currently freelancing and

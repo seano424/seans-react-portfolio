@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Avatar from '../components/Avatar'
 
 import { v4 as uuidv4 } from 'uuid'
 import * as Scroll from 'react-scroll'
@@ -30,15 +30,7 @@ export default function Home() {
       </Head>
 
       <section className="lg:w-7/12 w-6/7 text-center mb-16 lg:mt-8 lg:mb-20">
-        <Image
-          className="rounded-full m-auto"
-          src="/images/mebw.jpg"
-          alt="Image of Sean OReilly"
-          height={150}
-          width={150}
-          priority={true}
-          objectFit="cover"
-        />
+        <Avatar image={'/images/mebw.jpg'} />
         <h1 className="text-6xl font-bold my-4">Sean Patrick</h1>
         <article className="flex justify-center gap-x-4 text-sm mb-4">
           <a

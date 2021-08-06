@@ -22,12 +22,24 @@ module.exports = {
       },
       animation: {
         'pulse-slow': 'pulse 5s linear infinite',
+        'tracking-in-expand': 'tracking-in-expand 0.7s ease-in-out 1',
+      },
+      keyframes: {
+        'tracking-in-expand': {
+          '0%': { letterSpacing: '-0.5em', opacity: '0' },
+          '40%': { opacity: '0.6' },
+          '100%': { opacity: '1' },
+        },
+      },
+      transitionTimingFunction: {
+        'in-expo': 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
       },
     },
   },
   variants: {
     extend: {
       fontSize: ['hover', 'focus'],
+      transitionTimingFunction: ['hover', 'focus'],
     },
   },
   plugins: [],

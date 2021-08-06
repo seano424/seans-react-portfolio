@@ -31,7 +31,9 @@ export default function Home() {
 
       <section className="lg:w-7/12 w-6/7 text-center mb-16 lg:mt-8 lg:mb-20">
         <Avatar image={'/images/mebw.jpg'} />
-        <h1 className="text-6xl font-bold my-4">Sean Patrick</h1>
+        <h1 className="text-6xl font-bold my-4 tracking-tighter animate-tracking-in-expand">
+          Sean Patrick
+        </h1>
         <article className="flex justify-center gap-x-4 text-sm mb-4">
           <a
             className=" hover:text-primary transition-all duration-200 ease-linear"

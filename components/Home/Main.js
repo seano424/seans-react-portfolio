@@ -40,17 +40,19 @@ export default function Main() {
             <FiLinkedin />
           </a>
         </article>
-        <article className="text-base tracking-wider">
+        <article className="text-lg tracking-wider">
           <div className="flex flex-col leading-relaxed">
-            <p className="m-1">
-              I am a fullstack developer specializing in bringing forth
-              beautiful UI.
-            </p>
-            <p className="m-1">
-              I commonly make websites and apps with NextJS, and JAMstack
-              architecture. Currently, I am building using Hasura and PostgreSQL
-              in the backend and TailwindCSS in the frontend.
-            </p>
+            <div className="my-4">
+              <p className="m-1">
+                I am a fullstack developer specializing in bringing forth
+                beautiful UI.
+              </p>
+              <p className="m-1">
+                I commonly make websites and apps with NextJS, and JAMstack
+                architecture. Currently, I am building using Hasura and
+                PostgreSQL in the backend and TailwindCSS in the frontend.
+              </p>
+            </div>
             <a
               onClick={() => scrollTo('myElement')}
               className="p-4 mt-2 rounded-full text-center self-center cursor-pointer text-xl sm:px-4 font-black shadow-xl dark:bg-gray-50 dark:text-gray-900 transition-all duration-200 ease-linear hover:text-2xl  hover:text-primary"

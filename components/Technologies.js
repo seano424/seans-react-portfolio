@@ -17,10 +17,10 @@ export default function Technologies() {
       name="technologies"
       className="flex flex-col justify-center items-center"
     >
-      <h3 className="font-black mb-16 dark:text-white text-black text-5xl">
-        Technologies I frequently use
+      <h3 className="font-black text-center mb-8 md:mb-16 dark:text-white text-black text-3xl md:text-5xl bg-secondary bg-opacity-20 py-2 px-2">
+        Technologies I frequently use...
       </h3>
-      <aside className="flex flex-wrap text-2xl font-mono gap-10 justify-center items-center w-9/12">
+      <aside className="flex flex-col md:flex-row flex-wrap text-2xl font-mono gap-10 justify-center items-center w-9/12">
         <div className="flex justify-center items-center gap-2">
           <SiNextDotJs /> <span>NextJS</span>
         </div>
@@ -33,7 +33,7 @@ export default function Technologies() {
         <div className="flex justify-center items-center gap-2">
           <SiTailwindcss /> <span>TailwindCSS</span>
         </div>
-        <div className="flex justify-center items-center gap-2">
+        <div className="flex flex-wrap-reverse justify-center items-center gap-2 text-center">
           <SiJavascript /> <span>Vanilla JavaScript</span>
         </div>
         <div className="flex justify-center items-center gap-2">

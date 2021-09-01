@@ -17,7 +17,7 @@ export default function Main() {
         <h1 className="text-6xl font-bold mb-2 tracking-tighter animate-tracking-in-expand">
           Sean Patrick
         </h1>
-        <article className="flex justify-center gap-x-4 text-sm mb-2">
+        <article className="flex justify-center gap-x-4 text-base my-2">
           <a
             className=" hover:text-primary transition-all duration-200 ease-linear"
             href="https://twitter.com/sea_oreilly"

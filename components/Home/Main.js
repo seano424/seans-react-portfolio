@@ -11,10 +11,10 @@ export default function Main() {
     <>
       <section
         name="top"
-        className="lg:w-7/12 w-6/7 text-center mb-16 lg:mb-20"
+        className="lg:w-7/12 w-6/7 text-center mb-16 mt-2 lg:mb-20"
       >
         <Avatar image={'/images/mebw.jpg'} />
-        <h1 className="text-6xl font-bold mb-2 tracking-tighter animate-tracking-in-expand">
+        <h1 className="text-6xl font-bold my-4 tracking-tighter animate-tracking-in-expand">
           Sean Patrick
         </h1>
         <article className="flex justify-center gap-x-4 text-base my-2">

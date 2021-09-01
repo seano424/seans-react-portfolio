@@ -1,20 +1,6 @@
 import Avatar from '../../components/Avatar'
 import Layout from '../../components/Layout'
-import {
-  SiNextDotJs,
-  SiReact,
-  SiRails,
-  SiJavascript,
-  SiRuby,
-  SiTailwindcss,
-  SiSass,
-  SiHeroku,
-  SiNetlify,
-  SiStrapi,
-  SiPostgresql,
-  SiBootstrap,
-} from 'react-icons/si'
-import { IoLogoVercel } from 'react-icons/io'
+import Technologies from '@/components/Technologies'
 
 export default function About() {
   return (
@@ -51,47 +37,7 @@ export default function About() {
           </aside>
         </article>
         <article className="my-16">
-          <h3 className="font-black mb-16 dark:text-white text-black text-5xl">
-            Technologies I frequently use
-          </h3>
-          <aside className="text-3xl grid grid-cols-6 gap-8">
-            <button className="flex justify-center">
-              <SiNextDotJs />
-            </button>
-            <button className="flex justify-center">
-              <SiReact />
-            </button>
-            <button className="flex justify-center">
-              <SiRuby />
-            </button>
-            <button className="flex justify-center">
-              <SiRails />
-            </button>
-            <button className="flex justify-center">
-              <SiSass />
-            </button>
-            <button className="flex justify-center">
-              <SiTailwindcss />
-            </button>
-            <button className="flex justify-center">
-              <SiJavascript />
-            </button>
-            <button className="flex justify-center">
-              <SiHeroku />
-            </button>
-            <button className="flex justify-center">
-              <SiNetlify />
-            </button>
-            <button className="flex justify-center">
-              <SiStrapi />
-            </button>
-            <button className="flex justify-center">
-              <SiPostgresql />
-            </button>
-            <button className="flex justify-center">
-              <SiBootstrap />
-            </button>
-          </aside>
+          <Technologies />
         </article>
       </section>
     </Layout>

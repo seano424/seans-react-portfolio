@@ -5,8 +5,20 @@ import { scrollTo } from '@/utils/scroller'
 import projects from '@/lib/projectData'
 import Project from '@/components/Project'
 import Technologies from '../Technologies'
+import { useEffect, useState } from 'react'
 
 export default function Main() {
+  const [colorChange, setColorChange] = useState(false)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setColorChange(!colorChange)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [colorChange])
+
+  console.log(colorChange)
+
   return (
     <>
       <section
@@ -19,21 +31,27 @@ export default function Main() {
         </h1>
         <article className="flex justify-center gap-x-4 text-base my-2">
           <a
-            className=" hover:text-primary transition-all duration-200 ease-linear"
+            className={`hover:text-primary transition-all duration-200 ease-linear ${
+              colorChange && 'text-blue-500'
+            }`}
             href="https://twitter.com/sea_oreilly"
             target="_blank"
           >
             <FiTwitter />
           </a>
           <a
-            className="hover:text-primary transition-all duration-300 ease-linear"
+            className={`hover:text-primary transition-all duration-300 ease-linear ${
+              colorChange && ' text-green-800'
+            }`}
             href="https://github.com/seano424"
             target="_blank"
           >
             <FiGithub />
           </a>
           <a
-            className="hover:text-primary transition-all duration-500 ease-linear"
+            className={`hover:text-primary transition-all duration-500 ease-linear ${
+              colorChange && 'text-primary'
+            }`}
             href="https://www.linkedin.com/in/sea-oreilly/"
             target="_blank"
           >
@@ -59,12 +77,6 @@ export default function Main() {
             >
               Projects...
             </a>
-            {/* <a
-              onClick={() => scrollTo('technologies')}
-              className="p-4 mt-2 rounded-full text-center self-center cursor-pointer text-xl sm:px-4 font-black shadow-xl dark:bg-gray-50 dark:text-gray-900 transition-all duration-200 ease-linear hover:text-2xl  hover:text-primary"
-            >
-              Tech I know...
-            </a> */}
           </div>
         </article>
       </section>

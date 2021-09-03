@@ -51,10 +51,10 @@ export default function About() {
             </p>
           </aside>
         </article>
-        <article className="my-16">
-          <Technologies />
-        </article>
       </section>
+      <article className="my-16">
+        <Technologies />
+      </article>
     </Layout>
   )
 }

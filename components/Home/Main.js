@@ -59,12 +59,12 @@ export default function Main() {
             >
               Projects...
             </a>
-            <a
+            {/* <a
               onClick={() => scrollTo('technologies')}
               className="p-4 mt-2 rounded-full text-center self-center cursor-pointer text-xl sm:px-4 font-black shadow-xl dark:bg-gray-50 dark:text-gray-900 transition-all duration-200 ease-linear hover:text-2xl  hover:text-primary"
             >
               Tech I know...
-            </a>
+            </a> */}
           </div>
         </article>
       </section>

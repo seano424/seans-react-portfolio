@@ -17,8 +17,6 @@ export default function Main() {
     return () => clearInterval(interval)
   }, [colorChange])
 
-  console.log(colorChange)
-
   return (
     <>
       <section

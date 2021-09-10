@@ -64,7 +64,7 @@ export default function Navbar() {
             </a>
           </Link>
           <a
-            href="/images/resume.pdf"
+            href="/images/resume--sean.pdf"
             target="_blank"
             className={`p-2 hover:text-gray-800 dark:text-white w-40 text-center ${
               router.pathname === '/projects' &&

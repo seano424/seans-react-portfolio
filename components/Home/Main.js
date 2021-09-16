@@ -90,9 +90,7 @@ export default function Main() {
             <Project {...p} key={uuidv4()} />
           ))}
         </article>
-        <article className="my-10">
-          <Technologies />
-        </article>
+        <Technologies />
         <article className="flex justify-center mb-4">
           <a
             onClick={() => scrollTo('top')}

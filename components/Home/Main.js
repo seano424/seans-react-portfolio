@@ -60,7 +60,7 @@ export default function Main() {
           <div className="flex flex-col leading-relaxed">
             <div className="my-4">
               <p className="m-1">
-                I am a fullstack developer specializing in bringing forth
+                I am a Frontend Developer specializing in bringing forth
                 beautiful UI.
               </p>
               <p className="m-1">

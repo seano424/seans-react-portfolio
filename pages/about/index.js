@@ -15,12 +15,13 @@ export default function About() {
           </aside>
           <aside>
             <p className="my-8 tracking-wider leading-relaxed text-lg font-light">
-              I'm a passionate full stack developer and former teacher. I am a
-              graduate of the University of Kansas and more recently a Le Wagon
-              Bootcamp Graduate where we studied how to build full stack apps in
-              Ruby on Rails. More recently I have been developing apps with
-              React on the frontend and PostgreSQL on the backend! I love what I
-              do and I love learning more about new and old tech.
+              Hello! I'm a passionate Frontend Developer specializing in React
+              and JavaScript. I am a graduate of the University of Kansas and
+              more recently from the Le Wagon Coding Bootcamp where we built
+              full stack apps in Ruby on Rails and JavaScript. Since then, I
+              have been developing mainly with React and TailwindCSS. I am also
+              experienced with the backend, having built sites using PostgreSQL
+              and Ruby.
             </p>
             {/* <p className="my-8 tracking-wider leading-relaxed text-lg font-light">
               Since 2020, I've been living in Playa del Carmen and working

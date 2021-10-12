@@ -22,6 +22,9 @@ export default function MobileNav() {
       <a href="mailto:soreilly424@gmail.com" className={linkStyles}>
         contact
       </a>
+      <a href="/images/resume--sean.pdf" target="_blank" className={linkStyles}>
+        resume
+      </a>
     </section>
   )
 }

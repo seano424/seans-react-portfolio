@@ -37,7 +37,7 @@ export default function Navbar() {
             className="mr-4 hidden lg:block dark:bg-gray-200 rounded-lg"
           />
           <Link className="py-1 mt-1 pl-0 text-sm" href="/">
-            <a className="hidden lg:flex font-bold text-2xl text-primary hover:text-secondary dark:text-secondary dark:hover:text-primary animate-pulse-slow">
+            <a className="hidden lg:flex font-bold text-2xl text-primary">
               Sean Patrick
             </a>
           </Link>

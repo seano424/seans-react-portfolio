@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { useTheme } from 'next-themes'
-import { BiMoon, BiSun } from 'react-icons/bi'
+import { FiMoon, FiSun } from 'react-icons/fi'
 import Link from 'next/link'
 import MobileNav from '../components/MobileNav'
 
@@ -10,8 +10,6 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme()
   const router = useRouter()
 
-  console.log(router.pathname === '/')
-
   const button = (
     <button
       aria-label="Button for toggling dark mode"
@@ -19,9 +17,9 @@ export default function Navbar() {
       className="ml-4 rounded text-3xl lg:text-xl focus:outline-none"
     >
       {theme === 'dark' ? (
-        <BiSun className="hover:text-yellow-600 transition-all duration-500 ease-linear" />
+        <FiSun className="hover:text-yellow-600 transition-all duration-500 ease-linear" />
       ) : (
-        <BiMoon className="hover:text-purple-600 transition-all duration-500 ease-linear" />
+        <FiMoon className="hover:text-purple-600 transition-all duration-500 ease-linear" />
       )}
     </button>
   )

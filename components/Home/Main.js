@@ -60,13 +60,15 @@ export default function Main() {
           <div className="flex flex-col leading-relaxed">
             <div className="my-4">
               <p className="m-1">
-                I am a Frontend Developer specializing in bringing forth
-                beautiful UI.
+                I am a Frontend Developer specializing in React and bringing
+                forth beautiful UI.
               </p>
               <p className="m-1">
                 I commonly make websites and apps with NextJS, and JAMstack
-                architecture. Currently, I am building using Hasura and
-                PostgreSQL in the backend and TailwindCSS in the frontend.
+                architecture. Experienced in using JavaScript and JS frameworks,
+                Ruby on Rails, and HTML/CSS. Lately, I have been learning to use
+                Firebase and Recoil as an alternative to Redux in smaller
+                projects.
               </p>
             </div>
             <a

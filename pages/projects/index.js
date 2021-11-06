@@ -1,5 +1,5 @@
 import Layout from '../../components/Layout'
-import Project from '../../components/Project'
+import Project from '../../components/ProjectCard'
 import { v4 as uuidv4 } from 'uuid'
 import projects from '../../lib/projectData'
 

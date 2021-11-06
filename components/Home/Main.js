@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid'
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 import { scrollTo } from '@/utils/scroller'
 import projects from '@/lib/projectData'
-import Project from '@/components/Project'
+import ProjectCard from '@/components/ProjectCard'
 import Technologies from '../Technologies'
 import { useEffect, useState } from 'react'
 
@@ -89,7 +89,7 @@ export default function Main() {
           className="grid md:grid-cols-2 gap-x-10 mx-10 lg:mx-32"
         >
           {projects.map((p) => (
-            <Project {...p} key={uuidv4()} />
+            <ProjectCard {...p} key={uuidv4()} />
           ))}
         </article>
         <Technologies />

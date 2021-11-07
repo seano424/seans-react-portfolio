@@ -126,7 +126,7 @@ export default function Navbar() {
 
       {/* Mobile Navbar Section */}
       <section
-        className={`fixed z-10 top-20 bottom-0 w-full bg-white dark:bg-dark  ${
+        className={`fixed z-10 bottom-0 top-20 w-full bg-white dark:bg-dark  ${
           open ? 'opacity-100 h-full' : 'opacity-0 h-0'
         }`}
       >

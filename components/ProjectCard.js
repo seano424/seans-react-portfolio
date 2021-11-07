@@ -33,13 +33,11 @@ export default function Project({ title, description, repo, site, image }) {
             target="_blank"
             className="transition-all duration-300 ease-linear pt-3 pb-1 tracking-wide items-start flex flex-col"
           >
-            <h3 className="text-primary dark:hover:text-white text-lg font-bold">
+            <h3 className="text-primary dark:hover:text-white text-xs font-bold">
               {title}
             </h3>
 
-            <p className="dark:text-white pt-2 text-lg font-bold">
-              {description}
-            </p>
+            <p className="dark:text-white pt-2 md:text-lg">{description}</p>
           </a>{' '}
         </div>
       </article>

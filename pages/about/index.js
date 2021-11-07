@@ -26,7 +26,7 @@ export default function About() {
 
             <p className="my-8 tracking-wider leading-relaxed text-lg font-light">
               During my free time you can find me scuba diving 🤿, hiking 🏔,
-              travelling 🐫, going to the beach 🐳, reading fiction and various
+              traveling 🐫, going to the beach 🐳, reading fiction and various
               publications about the newest technology trends and other
               programming languages, and dabbling in photography 📸. You can
               find out more about me on{' '}

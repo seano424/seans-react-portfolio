@@ -12,9 +12,9 @@ export default function MobileNav() {
       <Link href="/about">
         <a className={linkStyles}>About</a>
       </Link>
-      <Link href="/posts">
+      {/* <Link href="/posts">
         <a className={linkStyles}>Blog</a>
-      </Link>
+      </Link> */}
 
       <a href="mailto:soreilly424@gmail.com" className={linkStyles}>
         contact

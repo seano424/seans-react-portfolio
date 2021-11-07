@@ -54,7 +54,7 @@ export default function Navbar() {
             </a>
           </Link>
 
-          <Link href="/posts">
+          {/* <Link href="/posts">
             <a
               className={`p-2 hover:text-gray-800 dark:text-white w-40 text-center ${
                 router.pathname === '/posts' &&
@@ -63,7 +63,7 @@ export default function Navbar() {
             >
               blog
             </a>
-          </Link>
+          </Link> */}
         </nav>
         <div className="hidden lg:flex justify-end items-center">
           <a

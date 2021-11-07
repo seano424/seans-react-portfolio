@@ -5,6 +5,7 @@ import { scrollTo } from '@/utils/scroller'
 import projects from '@/lib/projectData'
 import ProjectCard from '@/components/ProjectCard'
 import Technologies from '../Technologies'
+import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/solid'
 
 export default function Main() {
   const colorChange = true
@@ -67,7 +68,7 @@ export default function Main() {
                 onClick={() => scrollTo('myElement')}
                 className="p-4 mt-2 rounded-full text-center self-center cursor-pointer text-xl sm:px-4 font-black shadow-xl dark:bg-gray-50 dark:text-gray-900 transition-all duration-200 ease-linear hover:text-2xl  hover:text-primary"
               >
-                Projects...
+                <ArrowDownIcon className="h-6" />
               </a>
             </div>
           </div>
@@ -91,7 +92,7 @@ export default function Main() {
             onClick={() => scrollTo('top')}
             className="p-4 mt-4 rounded-full text-center self-center cursor-pointer text-xl sm:px-4 font-black shadow-xl dark:bg-gray-50 dark:text-gray-900 transition-all duration-200 ease-linear hover:text-2xl  hover:text-primary"
           >
-            Back to the top...
+            <ArrowUpIcon className="h-6" />
           </a>
         </article>
       </section>

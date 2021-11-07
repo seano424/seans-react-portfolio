@@ -1,28 +1,16 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useRouter } from 'next/router'
 import { useTheme } from 'next-themes'
 import { FiMoon, FiSun } from 'react-icons/fi'
 import Link from 'next/link'
 import MobileNav from '../components/MobileNav'
+import { DownloadIcon } from '@heroicons/react/outline'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const { theme, setTheme } = useTheme()
   const router = useRouter()
 
-  const button = (
-    <button
-      aria-label="Button for toggling dark mode"
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="ml-4 rounded text-3xl lg:text-xl focus:outline-none"
-    >
-      {theme === 'dark' ? (
-        <FiSun className="hover:text-yellow-600 transition-all duration-500 ease-linear" />
-      ) : (
-        <FiMoon className="hover:text-purple-600 transition-all duration-500 ease-linear" />
-      )}
-    </button>
-  )
   return (
     <>
       {/* 1st Section is Desktop and 2nd is Mobile */}
@@ -65,16 +53,7 @@ export default function Navbar() {
               about
             </a>
           </Link>
-          <a
-            href="/images/resume--sean.pdf"
-            target="_blank"
-            className={`p-2 hover:text-gray-800 dark:text-white w-40 text-center ${
-              router.pathname === '/projects' &&
-              'bg-white rounded-3xl dark:bg-gray-500'
-            }`}
-          >
-            resume
-          </a>
+
           <Link href="/posts">
             <a
               className={`p-2 hover:text-gray-800 dark:text-white w-40 text-center ${
@@ -86,14 +65,33 @@ export default function Navbar() {
             </a>
           </Link>
         </nav>
-        <div className="hidden lg:flex justify-end">
+        <div className="hidden lg:flex justify-end items-center">
+          <a
+            href="/images/resume--sean.pdf"
+            target="_blank"
+            className={`p-2 hover:text-gray-800 capitalize dark:text-white flex justify-center items-center`}
+          >
+            {/* <DownloadIcon className="w-5 h-5" /> */}
+            <span>resume</span>
+          </a>
           <a
             href="mailto:soreilly424@gmail.com"
             className={`p-2 hover:text-gray-800 capitalize dark:text-white self-center`}
           >
             contact
           </a>
-          {button}{' '}
+
+          <button
+            aria-label="Button for toggling dark mode"
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            className="ml-4 rounded text-3xl lg:text-xl focus:outline-none"
+          >
+            {theme === 'dark' ? (
+              <FiSun className="hover:text-yellow-600 transition-all duration-500 ease-linear" />
+            ) : (
+              <FiMoon className="hover:text-purple-600 transition-all duration-500 ease-linear" />
+            )}
+          </button>
         </div>
         <div className="flex items-center justify-between">
           <div
@@ -120,7 +118,19 @@ export default function Navbar() {
               }`}
             />
           </div>
-          <div className="flex lg:hidden">{button}</div>
+          <div className="flex lg:hidden">
+            <button
+              aria-label="Button for toggling dark mode"
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              className="ml-4 rounded text-3xl lg:text-xl focus:outline-none"
+            >
+              {theme === 'dark' ? (
+                <FiSun className="hover:text-yellow-600 transition-all duration-500 ease-linear" />
+              ) : (
+                <FiMoon className="hover:text-purple-600 transition-all duration-500 ease-linear" />
+              )}
+            </button>
+          </div>
         </div>
       </section>
 

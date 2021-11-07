@@ -13,6 +13,7 @@
     "os": false
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.5",
     "axios": "^0.21.1",
     "cloudinary-build-url": "^0.2.1",
     "cors": "^2.8.5",

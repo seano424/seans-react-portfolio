@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function index() {
   return (
     <Layout>
-      <div className="relative h-screen w-screen">
+      <div className="relative h-screen w-full">
         <a href="/images/resume.pdf" target="_blank">
           <Image
             className="object-scale-down"

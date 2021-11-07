@@ -3,7 +3,7 @@ import Project from '../../components/ProjectCard'
 import { v4 as uuidv4 } from 'uuid'
 import projects from '../../lib/projectData'
 
-export default function Projects({ data }) {
+export default function Projects() {
   return (
     <Layout>
       <section className="flex flex-col items-center mx-10">
@@ -20,19 +20,11 @@ export default function Projects({ data }) {
           .
         </p>
         <article className="grid lg:grid-cols-2 gap-10">
-          {data.map((p) => (
+          {projects.map((p) => (
             <Project {...p} key={uuidv4()} />
           ))}
         </article>
       </section>
     </Layout>
   )
-}
-
-export async function getStaticProps() {
-  const data = projects
-
-  return {
-    props: { data },
-  }
 }

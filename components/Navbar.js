@@ -25,8 +25,10 @@ export default function Navbar() {
   )
   return (
     <>
-      <nav className="sticky z-20 dark:bg-dark top-0 backdrop-filter backdrop-blur w-screen pt-4 px-8 py-6 lg:px-12 lg:grid grid-cols-3">
-        <article className="flex items-center">
+      {/* 1st Section is Desktop and 2nd is Mobile */}
+      <section className="sticky z-20 dark:bg-dark top-0 backdrop-filter backdrop-blur w-full pt-4 px-8 py-6 lg:px-12 lg:grid grid-cols-3">
+        {/* Logo and Name */}
+        <h1 className="flex items-center">
           <img
             src="/images/kanizsa-triangle.png"
             height="30px"
@@ -39,8 +41,10 @@ export default function Navbar() {
               Sean Patrick
             </a>
           </Link>
-        </article>
-        <article className="hidden lg:flex gap-4 justify-center capitalize text-gray-900 font-bold bg-gray-400 bg-opacity-10 py-2 px-4 rounded-3xl">
+        </h1>
+
+        {/* Desktop / Ipad Navbar */}
+        <nav className="hidden lg:flex gap-4 justify-center capitalize text-gray-900 font-bold bg-gray-400 bg-opacity-10 py-2 px-4 rounded-3xl">
           <Link href="/">
             <a
               className={`p-2 hover:text-gray-800 dark:text-white w-40 text-center ${
@@ -81,18 +85,8 @@ export default function Navbar() {
               blog
             </a>
           </Link>
-          <Link href="/projects">
-            <a
-              className={`p-2 hover:text-gray-800 dark:text-white w-40 text-center ${
-                router.pathname === '/projects' &&
-                'bg-white rounded-3xl dark:bg-gray-500'
-              }`}
-            >
-              projects
-            </a>
-          </Link>
-        </article>
-        <article className="hidden lg:flex justify-end">
+        </nav>
+        <div className="hidden lg:flex justify-end">
           <a
             href="mailto:soreilly424@gmail.com"
             className={`p-2 hover:text-gray-800 capitalize dark:text-white self-center`}
@@ -100,9 +94,9 @@ export default function Navbar() {
             contact
           </a>
           {button}{' '}
-        </article>
-        <section className="flex items-center justify-between">
-          <article
+        </div>
+        <div className="flex items-center justify-between">
+          <div
             onClick={() => setOpen(!open)}
             className="lg:hidden cursor-pointer flex flex-col justify-center p-3"
           >
@@ -125,10 +119,12 @@ export default function Navbar() {
                   : `transform rotate-0 mt-1 `
               }`}
             />
-          </article>
-          <article className="flex lg:hidden">{button}</article>
-        </section>
-      </nav>
+          </div>
+          <div className="flex lg:hidden">{button}</div>
+        </div>
+      </section>
+
+      {/* Mobile Navbar Section */}
       <section
         className={`fixed z-10 top-20 bottom-0 w-full bg-white dark:bg-dark  ${
           open ? 'opacity-100 h-full' : 'opacity-0 h-0'

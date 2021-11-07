@@ -5,15 +5,12 @@ const linkStyles =
 
 export default function MobileNav() {
   return (
-    <section className="flex flex-col items-center pt-12 px-20">
+    <section className="flex flex-col items-center px-20">
       <Link href="/">
         <a className={linkStyles}>Home</a>
       </Link>
       <Link href="/about">
         <a className={linkStyles}>About</a>
-      </Link>
-      <Link href="/projects">
-        <a className={linkStyles}>Projects</a>
       </Link>
       <Link href="/posts">
         <a className={linkStyles}>Blog</a>

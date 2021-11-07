@@ -10,7 +10,7 @@ export default function Layout({ children }) {
       <Meta />
       <div className={styles.container}>
         <Navbar />
-        <main className="flex flex-1 flex-col items-center dark:bg-dark w-screen">
+        <main className="flex flex-1 flex-col items-center dark:bg-dark w-full">
           {children}
         </main>
         <Footer />

@@ -5,18 +5,9 @@ import { scrollTo } from '@/utils/scroller'
 import projects from '@/lib/projectData'
 import ProjectCard from '@/components/ProjectCard'
 import Technologies from '../Technologies'
-import { useEffect, useState } from 'react'
 
 export default function Main() {
-  const [colorChange, setColorChange] = useState(false)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setColorChange(!colorChange)
-    }, 3000)
-
-    return () => clearInterval(interval)
-  }, [colorChange])
-
+  const colorChange = true
   return (
     <>
       <section
@@ -24,9 +15,9 @@ export default function Main() {
         className="lg:w-7/12 w-6/7 text-center mb-16 mt-2 lg:mb-20"
       >
         <Avatar image={'/images/mebw.jpg'} />
-        <h1 className="text-6xl font-bold my-4 tracking-tighter animate-tracking-in-expand">
+        <h2 className="text-6xl font-bold my-4 tracking-tighter animate-tracking-in-expand">
           Sean Patrick
-        </h1>
+        </h2>
         <article className="flex justify-center gap-x-4 text-base my-2">
           <a
             className={`hover:text-primary transition-all duration-200 ease-linear ${
@@ -47,7 +38,7 @@ export default function Main() {
             <FiGithub />
           </a>
           <a
-            className={`hover:text-primary transition-all duration-500 ease-linear ${
+            className={`hover:text-secondary transition-all duration-500 ease-linear ${
               colorChange && 'text-primary'
             }`}
             href="https://www.linkedin.com/in/sea-oreilly/"
@@ -71,12 +62,14 @@ export default function Main() {
                 projects.
               </p>
             </div>
-            <a
-              onClick={() => scrollTo('myElement')}
-              className="p-4 mt-2 rounded-full text-center self-center cursor-pointer text-xl sm:px-4 font-black shadow-xl dark:bg-gray-50 dark:text-gray-900 transition-all duration-200 ease-linear hover:text-2xl  hover:text-primary"
-            >
-              Projects...
-            </a>
+            <div className="h-20 flex justify-center items-center">
+              <a
+                onClick={() => scrollTo('myElement')}
+                className="p-4 mt-2 rounded-full text-center self-center cursor-pointer text-xl sm:px-4 font-black shadow-xl dark:bg-gray-50 dark:text-gray-900 transition-all duration-200 ease-linear hover:text-2xl  hover:text-primary"
+              >
+                Projects...
+              </a>
+            </div>
           </div>
         </article>
       </section>

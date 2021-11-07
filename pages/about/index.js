@@ -23,12 +23,7 @@ export default function About() {
               experienced with the backend, having built sites using PostgreSQL
               and Ruby.
             </p>
-            {/* <p className="my-8 tracking-wider leading-relaxed text-lg font-light">
-              Since 2020, I've been living in Playa del Carmen and working
-              freelance as a Jamstack and Rails Developer. I was previously a
-              front-end intern for the design and engineering company, Odd Camp,
-              and before that I worked as a teacher.
-            </p> */}
+
             <p className="my-8 tracking-wider leading-relaxed text-lg font-light">
               During my free time you can find me scuba diving 🤿, hiking 🏔,
               travelling 🐫, going to the beach 🐳, reading fiction and various

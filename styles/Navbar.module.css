@@ -1,0 +1,55 @@
+.nav {
+  @apply sticky z-20 top-0 backdrop-filter backdrop-blur w-full pt-4 px-8 py-6 lg:px-12 lg:grid grid-cols-3;
+}
+
+.logo {
+  @apply flex items-center;
+}
+
+.logoImg {
+  @apply mr-4 hidden lg:block rounded-lg;
+}
+
+.logoName {
+  @apply hidden lg:flex font-bold text-2xl text-primary;
+}
+
+.navLinksContainer {
+  @apply hidden lg:flex gap-4 justify-center capitalize text-gray-900 font-bold bg-gray-400 bg-opacity-10 py-2 px-4 rounded-3xl;
+}
+
+.navLink {
+  @apply p-2 hover:text-gray-800 w-40 text-center;
+}
+
+.right {
+  @apply hidden lg:flex justify-end items-center;
+}
+
+.rightLinks {
+  @apply p-2 hover:text-gray-800 capitalize;
+}
+
+.themeBtn {
+  @apply ml-4 rounded text-3xl lg:text-xl focus:outline-none;
+}
+
+.smallerSize {
+  @apply flex items-center justify-between;
+}
+
+.hamburger {
+  @apply lg:hidden cursor-pointer flex flex-col justify-center p-3;
+}
+
+.hamburgerBar {
+  @apply w-8 h-1 bg-gray-900 rounded-lg transition-all duration-150 ease-linear relative;
+}
+
+.smallerSizeThemeBtn {
+  @apply ml-4 rounded text-3xl lg:text-xl focus:outline-none lg:hidden flex;
+}
+
+.mobileSection {
+  @apply fixed z-10 bottom-0 top-20 w-full bg-white;
+}

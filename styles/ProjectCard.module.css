@@ -1,0 +1,35 @@
+.card {
+  @apply mb-10 rounded-lg p-4 lg:px-6 flex flex-col justify-between bg-gray-100 bg-opacity-70 cursor-pointer box-border;
+}
+
+.cardImg {
+  @apply object-cover object-top block rounded-lg;
+}
+
+.cardContent {
+  @apply flex flex-col lg:py-4 lg:h-40;
+}
+
+.cardTitleLink {
+  @apply transition-all duration-300 ease-linear pt-3 pb-1 tracking-wide items-start flex flex-col;
+}
+
+.cardTitle {
+  @apply text-primary dark:hover:text-white text-xs font-bold;
+}
+
+.cardDescription {
+  @apply py-2 md:text-lg;
+}
+
+.cardLinks {
+  @apply flex gap-x-4 pt-2 lg:pt-8 justify-between;
+}
+
+.cardSpan {
+  @apply transform transition-all duration-100 ease-linear;
+}
+
+.link {
+  @apply flex items-center gap-x-1 lg:px-6 lg:py-3 rounded cursor-pointer lg:bg-gray-200 lg:hover:bg-gray-300 lg:hover:text-pink-100 transition-all duration-150 ease-linear text-primary font-bold;
+}

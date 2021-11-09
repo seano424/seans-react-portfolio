@@ -1,0 +1,7 @@
+.container {
+  @apply min-h-screen flex flex-col justify-center items-center;
+}
+
+.main {
+  @apply flex flex-1 flex-col items-center w-full;
+}

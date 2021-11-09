@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from './Footer'
-import styles from '../styles/Home.module.css'
+import styles from '@/styles/Layout.module.css'
 import Navbar from './Navbar'
 import Meta from './Meta'
 
@@ -10,9 +10,7 @@ export default function Layout({ children }) {
       <Meta />
       <div className={styles.container}>
         <Navbar />
-        <main className="flex flex-1 flex-col items-center dark:bg-dark w-full">
-          {children}
-        </main>
+        <main className={`${styles.main} dark:bg-dark`}>{children}</main>
         <Footer />
       </div>
     </>

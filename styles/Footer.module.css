@@ -1,0 +1,7 @@
+.footer {
+  @apply font-light w-full h-[100px] flex justify-center items-center gap-8 text-2xl py-5;
+}
+
+.icons {
+  @apply hover:text-primary transition-all ease-linear;
+}

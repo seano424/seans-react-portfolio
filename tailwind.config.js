@@ -19,7 +19,8 @@ module.exports = {
       colors: {
         secondary: '#00b4d8',
         primary: '#FF017E',
-        dark: '#121212',
+        dark: '#111827',
+        black: '#030507',
       },
       animation: {
         'pulse-slow': 'pulse 5s linear infinite',

@@ -1,0 +1,11 @@
+.content {
+  @apply mt-8 w-6/7 xl:w-6/12;
+}
+
+.header {
+  @apply flex items-center justify-between font-bold dark:text-white text-black text-6xl tracking-wider;
+}
+
+.description {
+  @apply my-8 tracking-wider leading-relaxed text-lg font-light;
+}

@@ -1,0 +1,15 @@
+.container {
+  @apply flex flex-col my-10 justify-center items-center;
+}
+
+.list {
+  @apply flex flex-col md:flex-row flex-wrap gap-10 font-mono justify-center items-center w-10/12;
+}
+
+.header {
+  @apply font-black text-center mb-8 md:mb-16 text-black text-3xl md:text-5xl bg-secondary bg-opacity-20 py-2 px-2;
+}
+
+.item {
+  @apply flex justify-center items-center gap-2 text-xl md:text-3xl;
+}

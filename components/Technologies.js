@@ -4,7 +4,7 @@ import { technologies } from '@/lib/technologies'
 export default function Technologies() {
   return (
     <div name="technologies" className={styles.container}>
-      <h3 className={`${styles.header} dark:text-white`}>
+      <h3 className={`${styles.header} dark:text-white dark:bg-black`}>
         Technologies I frequently use...
       </h3>
       <div className={styles.list}>

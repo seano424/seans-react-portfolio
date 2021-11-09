@@ -6,9 +6,7 @@ import styles from '@/styles/ProjectCard.module.css'
 
 export default function Project({ title, description, repo, site, image }) {
   return (
-    <section
-      className={`${styles.card} dark:bg-black transform hover:scale-105 duration-[250ms] ease-out`}
-    >
+    <section className={`${styles.card} dark:bg-black`}>
       <div>
         <a href={site} target="_blank">
           <Image

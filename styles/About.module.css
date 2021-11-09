@@ -3,7 +3,7 @@
 }
 
 .header {
-  @apply flex items-center justify-between font-bold dark:text-white text-black text-6xl tracking-wider;
+  @apply flex items-center justify-between font-bold text-black text-6xl tracking-wider;
 }
 
 .description {

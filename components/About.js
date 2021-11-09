@@ -4,7 +4,7 @@ import styles from '@/styles/About.module.css'
 function About() {
   return (
     <section className={styles.content}>
-      <div className={styles.header}>
+      <div className={`${styles.header} dark:text-white`}>
         About Sean...
         <Avatar image={'/images/avataaars.png'} />
       </div>

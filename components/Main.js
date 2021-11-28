@@ -8,6 +8,7 @@ import Technologies from './Technologies'
 import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/solid'
 import styles from '@/styles/Main.module.css'
 
+
 export default function Main() {
   return (
     <>
@@ -74,6 +75,7 @@ export default function Main() {
           </a>
         </article>
       </section>
+
     </>
   )
 }

@@ -23,7 +23,8 @@ body {
   height: 100%;
 } */
 
-a {
+a,
+button {
   color: inherit;
   text-decoration: none;
 }

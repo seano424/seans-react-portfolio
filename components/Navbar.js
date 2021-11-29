@@ -60,7 +60,7 @@ export default function Navbar() {
         {/* Resume & Contact & Dark Icon */}
         <div className={styles.right}>
           <a
-            href="/images/resume--sean.pdf"
+            href="/images/seanresume.pdf"
             target="_blank"
             className={`${styles.rightLinks} dark:text-white`}
           >

@@ -20,6 +20,7 @@
     "dotenv": "^10.0.0",
     "emailjs-com": "^3.0.2",
     "express": "^4.17.1",
+    "framer-motion": "^5.3.3",
     "next": "^11.0.0",
     "next-themes": "^0.0.14",
     "nodemailer": "^6.6.1",

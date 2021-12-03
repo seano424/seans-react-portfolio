@@ -1,12 +1,44 @@
+import { useEffect } from 'react'
 import { FaGithub } from 'react-icons/fa'
 import { BiShow } from 'react-icons/bi'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/ProjectCard.module.css'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 export default function Project({ title, description, repo, site, image }) {
+  const controls = useAnimation()
+  const { ref, inView } = useInView()
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+
+    if (!inView) {
+      controls.start('hidden')
+    }
+  }, [controls, inView])
+
+  const boxVariants = {
+    hidden: { scale: 0 },
+    visible: {
+      scale: 1,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  }
+
   return (
-    <section className={`${styles.card} dark:bg-black`}>
+    <motion.div
+      ref={ref}
+      className={`${styles.card} dark:bg-black`}
+      initial="hidden"
+      animate={controls}
+      variants={boxVariants}
+    >
       <div>
         <a href={site} target="_blank">
           <Image
@@ -61,6 +93,6 @@ export default function Project({ title, description, repo, site, image }) {
           <FaGithub className="text-2xl" />
         </a>
       </div>
-    </section>
+    </motion.div>
   )
 }

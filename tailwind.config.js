@@ -24,7 +24,7 @@ module.exports = {
       },
       animation: {
         'pulse-slow': 'pulse 5s linear infinite',
-        'tracking-in-expand': 'tracking-in-expand 0.7s ease-in-out 1',
+        'tracking-in-expand': 'tracking-in-expand 0.7s ease-in-out',
       },
       keyframes: {
         'tracking-in-expand': {

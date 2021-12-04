@@ -48,6 +48,7 @@ export default function Project({ title, description, repo, site, image }) {
             layout="responsive"
             width={10}
             height={6}
+            priority
           />
         </a>
 

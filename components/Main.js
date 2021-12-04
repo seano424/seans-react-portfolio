@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import Avatar from '@/components/Avatar'
 import { v4 as uuidv4 } from 'uuid'
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
@@ -8,13 +9,26 @@ import Technologies from './Technologies'
 import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/solid'
 import styles from '@/styles/Main.module.css'
 
-
 export default function Main() {
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 100)
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
     <>
       <section name="top" className={styles.topContainer}>
         <Avatar image={'/images/mebw.jpg'} />
-        <h2 className={styles.header}>Sean Patrick</h2>
+        <h2
+          className={`text-6xl h-16 tracking-tight font-bold my-4 ${
+            !loading && 'animate-tracking-in-expand'
+          }`}
+        >
+          {!loading && 'Sean Patrick'}
+        </h2>
         <div className={styles.icons}>
           <a
             className="hover:text-primary transition-all duration-200 ease-linear text-blue-500 dark:text-white"
@@ -75,7 +89,6 @@ export default function Main() {
           </a>
         </article>
       </section>
-
     </>
   )
 }

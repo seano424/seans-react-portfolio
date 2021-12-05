@@ -6,7 +6,7 @@ import { AnimatePresence } from 'framer-motion'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <AnimatePresence exitBeforeEnter initial={false}>
+    <AnimatePresence exitBeforeEnter>
       <ThemeProvider attribute="class">
         <Component {...pageProps} />
       </ThemeProvider>

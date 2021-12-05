@@ -8,27 +8,44 @@ import ProjectCard from '@/components/ProjectCard'
 import Technologies from './Technologies'
 import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/solid'
 import styles from '@/styles/Main.module.css'
+import { motion } from 'framer-motion'
 
 export default function Main() {
-  const [loading, setLoading] = useState(true)
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 150)
-    return () => clearTimeout(timer)
-  }, [])
+  // const [loading, setLoading] = useState(true)
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false)
+  //   }, 150)
+  //   return () => clearTimeout(timer)
+  // }, [])
+
+  // 'tracking-in-expand': {
+  //   '0%': { letterSpacing: '-0.5em', opacity: '0' },
+  //   '40%': { opacity: '0.6' },
+  //   '100%': { opacity: '1' },
+  // 0.025
 
   return (
     <>
       <section name="top" className={styles.topContainer}>
         <Avatar image={'/images/mebw.jpg'} />
-        <h2
-          className={`text-6xl h-16 tracking-tight font-bold my-4 ${
-            !loading && 'animate-tracking-in-expand'
-          }`}
+        <motion.h2
+          initial={{
+            letterSpacing: '-0.5em',
+            opacity: '0',
+          }}
+          animate={{
+            opacity: 1,
+            letterSpacing: '-0.025em',
+          }}
+          transition={{
+            delay: 0.3,
+            duration: 0.5,
+          }}
+          className={`text-6xl h-16 tracking-tight font-bold my-4 `}
         >
-          {!loading && 'Sean Patrick'}
-        </h2>
+          Sean Patrick
+        </motion.h2>
         <div className={styles.icons}>
           <a
             className="hover:text-primary transition-all duration-200 ease-linear text-blue-500 dark:text-white"

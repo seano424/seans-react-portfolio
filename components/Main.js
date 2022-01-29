@@ -33,7 +33,7 @@ export default function Main() {
           }}
           className={`text-6xl h-16 tracking-tight font-bold mt-10 mb-4 `}
         >
-          Sean Patrick
+          Hi! 👋 I'm Sean Patrick O'Reilly
         </motion.h2>
 
         <div className="flex justify-center gap-x-4">
@@ -62,15 +62,17 @@ export default function Main() {
         <div className="text-lg tracking-wider flex flex-col leading-relaxed">
           <div className="my-4">
             <p className="m-1">
-              I am a Frontend Developer specializing in React and bringing forth
-              beautiful UI.
+              The long name because well it was fricken hard to find my a domain
+              that was perfect for me. You can just call me Sean :) I am a
+              Frontend Developer specializing in React and bringing forth
+              beautiful UI, and I love what I do!
             </p>
             <p className="m-1">
               I commonly make websites and apps with NextJS, and JAMstack
               architecture. Experienced in using JavaScript and JS frameworks,
               Ruby on Rails, and HTML/CSS. Lately, I have been learning to use
-              Firebase and Recoil as an alternative to Redux in smaller
-              projects.
+              Twig, Craft CMS, and Svelte. If you have any fun projects in mind
+              feel free to reach out!
             </p>
           </div>
           <div className={styles.buttonDownContainer}>

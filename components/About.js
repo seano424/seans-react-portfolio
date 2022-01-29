@@ -3,13 +3,13 @@ import Avatar from './Avatar'
 import styles from '@/styles/About.module.css'
 function About() {
   return (
-    <section className={styles.content}>
-      <div className={`${styles.header} dark:text-white`}>
+    <section className="mt-8 px-20">
+      <div className="flex items-center justify-between font-bold text-black text-6xl tracking-wider dark:text-white">
         About Sean...
         <Avatar image={'/images/avataaars.png'} />
       </div>
       <div>
-        <p className={styles.description}>
+        <p className=" my-8 tracking-wider leading-relaxed text-lg font-light">
           Hello! I'm a passionate Frontend Developer specializing in React and
           JavaScript. I am a graduate of the University of Kansas and more
           recently from the Le Wagon Coding Bootcamp where we built full stack
@@ -18,7 +18,7 @@ function About() {
           with the backend, having built sites using PostgreSQL and Ruby.
         </p>
 
-        <p className={styles.description}>
+        <p className=" my-8 tracking-wider leading-relaxed text-lg font-light">
           During my free time you can find me scuba diving 🤿, hiking 🏔,
           traveling 🐫, going to the beach 🐳, reading fiction and various
           publications about the newest technology trends and other programming

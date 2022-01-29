@@ -11,23 +11,12 @@ import styles from '@/styles/Main.module.css'
 import { motion } from 'framer-motion'
 
 export default function Main() {
-  // const [loading, setLoading] = useState(true)
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setLoading(false)
-  //   }, 150)
-  //   return () => clearTimeout(timer)
-  // }, [])
-
-  // 'tracking-in-expand': {
-  //   '0%': { letterSpacing: '-0.5em', opacity: '0' },
-  //   '40%': { opacity: '0.6' },
-  //   '100%': { opacity: '1' },
-  // 0.025
-
   return (
     <>
-      <section name="top" className={styles.topContainer}>
+      <section
+        name="top"
+        className="text-center flex flex-col items-center my-5"
+      >
         <Avatar image={'/images/mebw.jpg'} />
         <motion.h2
           initial={{
@@ -42,34 +31,35 @@ export default function Main() {
             delay: 0.3,
             duration: 0.5,
           }}
-          className={`text-6xl h-16 tracking-tight font-bold my-4 `}
+          className={`text-6xl h-16 tracking-tight font-bold mt-10 mb-4 `}
         >
           Sean Patrick
         </motion.h2>
-        <div className={styles.icons}>
+
+        <div className="flex justify-center gap-x-4">
           <a
             className="hover:text-primary transition-all duration-200 ease-linear text-blue-500 dark:text-white"
             href="https://twitter.com/sea_oreilly"
             target="_blank"
           >
-            <FiTwitter />
+            <FiTwitter className="h-5 w-5" />
           </a>
           <a
             className="hover:text-primary transition-all duration-300 ease-linear text-green-500 dark:text-green-200"
             href="https://github.com/seano424"
             target="_blank"
           >
-            <FiGithub />
+            <FiGithub className="h-5 w-5" />
           </a>
           <a
             className="hover:text-secondary transition-all duration-500 ease-linear text-primary dark:text-blue-200"
             href="https://www.linkedin.com/in/sea-oreilly/"
             target="_blank"
           >
-            <FiLinkedin />
+            <FiLinkedin className="h-5 w-5" />
           </a>
         </div>
-        <div className={styles.bio}>
+        <div className="text-lg tracking-wider flex flex-col leading-relaxed">
           <div className="my-4">
             <p className="m-1">
               I am a Frontend Developer specializing in React and bringing forth
@@ -84,7 +74,10 @@ export default function Main() {
             </p>
           </div>
           <div className={styles.buttonDownContainer}>
-            <a onClick={() => scrollTo('myElement')} className={styles.button}>
+            <a
+              onClick={() => scrollTo('myElement')}
+              className="p-4 mt-2 rounded-full text-center self-center cursor-pointer text-xl sm:px-4 font-black shadow-xl dark:bg-gray-50 dark:text-gray-900 transition-all duration-200 ease-linear hover:text-2xl  hover:text-primary animate-pulse"
+            >
               <ArrowDownIcon className="h-6" />
             </a>
           </div>
@@ -94,14 +87,20 @@ export default function Main() {
       <hr />
 
       <section>
-        <article name="myElement" className={styles.projectsContainer}>
+        <article
+          name="myElement"
+          className="grid md:grid-cols-2 mt-10 gap-x-10"
+        >
           {projects.map((p) => (
             <ProjectCard {...p} key={uuidv4()} />
           ))}
         </article>
         <Technologies />
         <article className={styles.techContainer}>
-          <a onClick={() => scrollTo('top')} className={styles.button}>
+          <a
+            onClick={() => scrollTo('top')}
+            className="p-4 mt-2 rounded-full text-center self-center cursor-pointer text-xl sm:px-4 font-black shadow-xl dark:bg-gray-50 dark:text-gray-900 transition-all duration-200 ease-linear hover:text-2xl  hover:text-primary animate-pulse"
+          >
             <ArrowUpIcon className="h-6" />
           </a>
         </article>

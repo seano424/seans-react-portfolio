@@ -24,9 +24,11 @@ export default function Layout({ children }) {
       transition={{ duration: 0.5 }}
     >
       <Meta />
-      <div className={styles.container}>
+      <div className="min-h-screen flex flex-col justify-center items-center">
         <Navbar />
-        <main className={`${styles.main} dark:bg-dark`}>{children}</main>
+        <main className="dark:bg-black flex flex-col justify-center items-center px-80 ">
+          {children}
+        </main>
         <Footer />
       </div>
     </motion.div>

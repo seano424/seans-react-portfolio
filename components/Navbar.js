@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <>
       {/* 1st Section is Desktop and 2nd is Mobile */}
-      <nav className={`${styles.nav} dark:bg-dark`}>
+      <nav className={`${styles.nav} dark:bg-black`}>
         {/* Logo and Name */}
         <h1 className={styles.logo}>
           <img

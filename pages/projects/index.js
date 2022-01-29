@@ -6,7 +6,7 @@ import projects from '../../lib/projectData'
 export default function Projects() {
   return (
     <Layout>
-      <section className="flex flex-col items-center mx-10">
+      <section className="flex flex-col items-center">
         <h1 className="text-6xl font-bold mt-16 tracking-wide">Projects</h1>
         <p className="my-10 text-xl dark:text-gray-400 text-gray-700 lg:w-3/12 text-center">
           I'm always working on new projects. You can find them on my{' '}

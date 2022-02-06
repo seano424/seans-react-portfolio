@@ -18,15 +18,12 @@ export default function Layout({ children }) {
       initial="hidden"
       animate="enter"
       exit="exit"
-      // initial={{ opacity: 0 }}
-      // animate={{ opacity: 1 }}
-      // exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
       <Meta />
       <div className="min-h-screen flex flex-col justify-center items-center">
         <Navbar />
-        <main className="dark:bg-black flex flex-col justify-center items-center px-80 ">
+        <main className="dark:bg-black flex flex-col justify-center items-center px-10 lg:px-80 ">
           {children}
         </main>
         <Footer />

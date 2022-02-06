@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
 const linkStyles =
-  'text-6xl font-black tracking-tight py-4 uppercase rounded px-2'
+  'text-6xl font-black tracking-tight py-4 uppercase rounded px-2 hover:text-primary transition duration-150'
 
 export default function MobileNav() {
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center dark:bg-black h-screen pt-16">
       <Link href="/">
-        <a className={linkStyles}>Home</a>
+        <a className={`${linkStyles} mt-20`}>Home</a>
       </Link>
       <Link href="/about">
         <a className={linkStyles}>About</a>

@@ -1,4 +1,3 @@
-import styles from '@/styles/Technologies.module.css'
 import { technologies } from '@/lib/technologies'
 
 export default function Technologies() {

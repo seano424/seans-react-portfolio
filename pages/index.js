@@ -1,11 +1,12 @@
-import Head from 'next/head'
-import Main from '@/components/Main'
 import Layout from '../components/Layout'
+import Hero from '@/components/Hero'
+import ProjectCards from '@/components/ProjectCards'
 
 export default function Home() {
   return (
     <Layout>
-      <Main />
+      <Hero />
+      <ProjectCards />
     </Layout>
   )
 }

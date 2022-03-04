@@ -43,6 +43,32 @@ export async function getStaticProps() {
   const allposts = await getAllPosts('6adb3253346d49cbbd70077cb772e4b9')
   const posts = allposts.filter((post) => post.title != "Let's Work Together")
 
+  try {
+    const res = await fetch(
+      "https://www.ajmadison.com/product3.0/packages.index.json.php?sku=RF28R7351SR",
+      {
+        method: "GET",
+        headers: {
+          // update with your user-agent
+          "User-Agent":
+            "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Mobile Safari/537.36",
+          Accept: "application/json; charset=UTF-8",
+        },
+      }
+    );
+
+    data = await res.json();
+  } catch (e) {
+    error = e.toString();
+  }
+
+  return {
+    props: {
+      data,
+      error,
+    },
+  };
+
   return {
     props: {
       posts,

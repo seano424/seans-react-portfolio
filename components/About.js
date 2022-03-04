@@ -1,12 +1,12 @@
 import React from 'react'
-import Avatar from './Avatar'
+import Avatar from 'react-avatar'
 import styles from '@/styles/About.module.css'
 function About() {
   return (
     <section className="mt-8 px-20">
       <div className="flex items-center justify-between font-bold text-black text-6xl tracking-wider dark:text-white">
-        About Sean...
-        <Avatar image={'/images/avataaars.png'} />
+        About Oswaldo...
+        <Avatar image={'public\images\avataaars.png'} /> 
       </div>
       <div>
         <p className=" my-8 tracking-wider leading-relaxed text-lg font-light">
@@ -22,16 +22,8 @@ function About() {
           During my free time you can find me scuba diving 🤿, hiking 🏔,
           traveling 🐫, going to the beach 🐳, reading fiction and various
           publications about the newest technology trends and other programming
-          languages, and dabbling in photography 📸. You can find out more about
-          me on{' '}
-          <a
-            className="text-primary"
-            href="https://www.instagram.com/sea.oreilly/"
-          >
-            Instagram
-          </a>{' '}
-          or{' '}
-          <a className="text-primary" href="https://www.github.com/seano424">
+          languages, and dabbling in photography 📸.{' '}
+          <a className="text-primary" href="https://github.com/OswalDev">
             GitHub
           </a>
           .

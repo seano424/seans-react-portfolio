@@ -10,7 +10,7 @@ function Hero() {
         <Image
           className="rounded-full m-auto"
           src={'/images/mebw.jpg'}
-          alt="Image of Sean OReilly"
+          alt="Image of Oswaldo Soto"
           priority={true}
           objectFit="cover"
           layout="fill"
@@ -32,27 +32,20 @@ function Hero() {
         }}
         className={`text-6xl tracking-tight font-bold mt-10 mb-4 `}
       >
-        Hi! 👋 I'm Sean Patrick O'Reilly
+        Hi! 👋 I'm Oswaldo Soto
       </motion.h2>
 
       <div className="flex justify-center gap-x-4">
         <a
-          className="hover:text-primary transition-all duration-200 ease-linear text-blue-500 dark:text-white"
-          href="https://twitter.com/sea_oreilly"
-          target="_blank"
-        >
-          <FiTwitter className="h-5 w-5" />
-        </a>
-        <a
           className="hover:text-primary transition-all duration-300 ease-linear text-green-500 dark:text-green-200"
-          href="https://github.com/seano424"
+          href="https://github.com/OswalDev"
           target="_blank"
         >
           <FiGithub className="h-5 w-5" />
         </a>
         <a
           className="hover:text-secondary transition-all duration-500 ease-linear text-primary dark:text-blue-200"
-          href="https://www.linkedin.com/in/sea-oreilly/"
+          href="https://www.linkedin.com/in/oswaldojaviersg/"
           target="_blank"
         >
           <FiLinkedin className="h-5 w-5" />
@@ -76,7 +69,7 @@ function Hero() {
         </div>
         <div className="h-20 flex justify-center items-center">
           <a
-            onClick={() => scrollTo('myElement')}
+            onClick={() => scrollTo(0,800)}
             className="p-4 mt-2 rounded-full text-center self-center cursor-pointer text-xl sm:px-4 font-black shadow-xl dark:bg-gray-50 dark:text-gray-900 transition-all duration-200 ease-linear hover:text-2xl  hover:text-primary animate-pulse"
           >
             <ArrowDownIcon className="h-6" />

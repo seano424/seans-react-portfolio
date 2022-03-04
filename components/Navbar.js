@@ -25,7 +25,7 @@ export default function Navbar() {
             className={`${styles.logoImg} dark:bg-gray-200`}
           />
           <Link href="/">
-            <a className={styles.logoName}>Sean Patrick</a>
+            <a className={styles.logoName}>Oswaldo Soto</a>
           </Link>
         </h1>
 
@@ -64,13 +64,13 @@ export default function Navbar() {
             target="_blank"
             className={`${styles.rightLinks} dark:text-white`}
           >
-            <span>resume</span>
+            <span>Resume</span>
           </a>
           <a
-            href="mailto:soreilly424@gmail.com"
+            href="mailto:oswaldojsotog@gmail.com"
             className={`${styles.rightLinks} dark:text-white`}
           >
-            contact
+            Contact
           </a>
 
           <button
